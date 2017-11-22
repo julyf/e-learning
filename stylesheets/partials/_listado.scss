@@ -1,0 +1,105 @@
+.result-content {
+  padding-top: 30px;
+}
+
+
+// Caja de cursos
+.courseBox {
+  margin-bottom: 30px;
+
+  .favorite-icon {
+      position: absolute;
+      right: 15px;
+      top:7px;
+      z-index: 2;
+   
+      i {
+    	 color: #E0E0E0;
+      }
+      &.favorite-icon--selected i{
+         color:#2F80ED;
+      }
+      &:hover i {
+         color: #828282;
+         cursor: pointer;
+      }
+   }
+   .courseBox--logo{
+  	   padding: 0 30px 5px 0;
+  	   height: 40px;
+  	   img{
+         max-width: 90%;
+         max-height: 100%;
+  	   }
+   }
+
+   .courseBox--img {
+	  	border-radius: 10px;
+	  	overflow: hidden;
+	  	img {
+         max-width: 100%;
+         display: block;
+         width: 100%;
+      }
+   }
+   .courseBox--state {
+      position: relative;
+      border-radius: 5px;
+      height: 5px;
+      background: #E0E0E0;
+      margin: 6px 0 12px 0;
+      
+      .courseBox--progressBar {
+         height: 100%;
+         border-radius: 5px;
+         background-color: #56CCF2;
+      }
+   }
+   .courseBox--name {
+      font-size: 1.25rem;
+      line-height: 1.625rem;
+      margin-bottom: 8px;
+   }
+   .courseBox--speaker {
+      color: #828282;
+      font-size: 0.875rem;
+      margin-bottom: 8px;
+   }
+   .courseBox--calification {
+      white-space: nowrap;
+      color: #828282;
+      font-size: 0.875rem;
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: top;
+
+      .start-icon--on,
+      .start-icon--off { 
+         font-size: 1.313rem;
+         line-height:  1.688rem;
+         vertical-align: middle;
+         margin-left: -3px;
+      }
+      .start-icon--on {
+         color: #FFE184;
+      }
+      .start-icon--off {
+         color: #E0E0E0;
+      }
+
+      span {
+         display: inline-block;
+         vertical-align: middle;
+         margin-left: 4px;
+      }
+   }
+
+   .courseBox--modificationDate {
+      color: #828282;
+      font-size:  0.875rem;
+      text-align: right;
+      display: inline-block;
+      line-height: 1.688rem;
+      vertical-align: top;
+   }
+}

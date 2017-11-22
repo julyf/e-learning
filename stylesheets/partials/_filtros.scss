@@ -1,0 +1,99 @@
+//FILTROS
+
+.filter-section { 
+
+   h3 {
+      font-size: 1rem;
+      color: #828282;
+      font-weight: bold;
+      line-height: 1.1875rem;
+      margin-top:10px;
+   }
+
+   .filterBox {
+      background-color: #F2F2F2;
+      border-radius: 10px;
+
+      .btn {
+         display: block;
+         text-align: left;
+         position: relative;
+         color: #333;
+         border-top:1px solid #E0E0E0;
+         line-height: 1.4em;
+         border-radius: 0;
+         white-space: normal;
+
+         i {
+            transform: rotate(180deg);
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            color: #C4C4C4;
+            margin-top: -12px;
+         }
+
+         &.collapsed i {
+            transform: rotate(0deg);
+         }
+      }
+
+      ul {
+         list-style: none;
+         padding: 0;
+         margin-bottom: 0;
+
+         li {
+            &.is--selected, 
+            &:hover {
+               background-color: #EBEBEB;
+            }
+
+            a {
+               color: #4F4F4F;
+               font-size: 1rem;
+               display: block;
+               padding: 12px 15px 12px 0;
+               border-top:1px solid #E0E0E0;
+               line-height: 1.4em;
+
+               &:hover{
+                  text-decoration: none;
+                  background-color: #EBEBEB;
+               }
+            }
+         }
+      }
+
+      > .filterBox--firstLevel:first-child > .btn {
+         border-top: 0;
+      }
+
+      .filterBox--firstLevel {
+         > .btn {
+         font-size: 1.25rem;
+         font-weight: bold;
+         padding:  10px 35px 10px 15px;
+         }
+
+         li {
+            padding-left: 30px;
+         }
+      }
+
+      .filterBox--secondLevel{ 
+         > .btn{
+            font-size: 1.125rem;
+            margin-left: 30px;
+            padding:  12px 35px 12px 0;
+         }
+         li {
+            padding-left: 60px;
+
+         }   
+      }
+   }
+}
+
+
+
