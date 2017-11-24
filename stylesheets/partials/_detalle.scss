@@ -1,0 +1,173 @@
+.detalle .top-bar {
+	text-align: left;
+}
+
+.courseDetail-content,
+	.similar-lectures {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+.courseDetail-content {
+	background-color: rgba(47, 128, 237, 0.1);
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+
+.courseDetail--video-content {
+	padding-right: 10px;
+}
+.courseDetail--video {
+	position: relative;
+	display: block;
+	border-radius: 10px;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.icon-play {
+		background-color: rgba(47, 128, 237, 0.8);
+		border-radius: 50%;
+		display: inline-block;
+		height: 10vw;
+		left: 0;
+		margin: -5vw auto 0 auto;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		vertical-align: middle;
+		width: 10vw;
+
+		&:hover {
+			background-color: rgba(47, 128, 237, 1);
+		}
+
+
+		i {
+			color: #FFF;
+			display: block;
+			font-size:7vw;
+			line-height: 10vw;
+			text-align: center;
+			vertical-align: middle;
+		}
+	}
+}
+
+.courseDetail--video-bottom {
+	padding: 10px 0;
+	position: relative;
+
+	.favorite-icon {
+		right: 0;
+		top: 12px;
+	}
+
+}
+
+
+.courseDetail--title {
+	font-size: 1.75rem;
+	margin: 0 0 10px 0;
+	line-height: 2rem;
+}
+
+.courseDetail--subtitle {
+	font-size: 1rem;
+	margin: 0 0 10px 0;
+	line-height: 1.25rem;
+}
+.courseDetail--keyWords {
+	color: #2F80ED;
+	padding: 10px 0;
+	a {
+		font-size: 0.75rem;
+		line-height: 1.313rem;
+	}
+}
+.courseDetail--author,
+.courseDetail--section {
+	margin: 2px 0;
+
+	span {
+		padding-right: 15px;
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+}
+
+
+
+
+
+.courseDetail--lectureObjectives-title {
+	font-weight: bold;
+	font-size: 1rem;
+	line-height: 1.313rem;
+	margin:  20px 0 0 0 ; 
+}
+.courseDetail--lectureObjectives-list {
+	font-size: 1rem;
+	line-height: 1.313rem;
+	padding: 0 0 0 15px;
+	margin: 0 ;
+}
+
+
+
+
+
+
+.similar-lectures {
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	h2 {
+		font-size:  1.625rem;
+		text-align: center;
+		margin:  0 0 30px 0;
+	}
+}
+
+
+ @media (max-width: 767px) {
+	.courseDetail-content,
+	.similar-lectures {
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+
+	.courseDetail-content {
+		padding-top: 20px;
+	}
+
+	.courseDetail--video-content {
+		max-width: 450px;
+		margin: 0 auto;
+		padding-right: 0;
+	}
+
+	.courseDetail--video {
+
+		.icon-play {
+			
+			height: 60px;
+			margin: -30px auto 0 auto;
+			width: 60px;
+
+
+			i {
+				font-size:3rem;
+				line-height: 60px;
+			}
+		}
+	}
+
+	.courseDetail--title {
+		margin-top: 30px;
+	}
+}

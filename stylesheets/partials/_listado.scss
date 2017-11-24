@@ -7,23 +7,7 @@
 .courseBox {
   margin-bottom: 30px;
 
-  .favorite-icon {
-      position: absolute;
-      right: 15px;
-      top:7px;
-      z-index: 2;
-   
-      i {
-    	 color: #E0E0E0;
-      }
-      &.favorite-icon--selected i{
-         color:#2F80ED;
-      }
-      &:hover i {
-         color: #828282;
-         cursor: pointer;
-      }
-   }
+  
    .courseBox--logo{
   	   padding: 0 30px 5px 0;
   	   height: 40px;
@@ -65,6 +49,18 @@
       font-size: 0.875rem;
       margin-bottom: 8px;
    }
+
+
+   .courseBox--modificationDate {
+      color: #828282;
+      font-size:  0.875rem;
+      text-align: right;
+      display: inline-block;
+      line-height: 1.688rem;
+      vertical-align: top;
+   }
+}
+
    .courseBox--calification {
       white-space: nowrap;
       color: #828282;
@@ -94,12 +90,20 @@
       }
    }
 
-   .courseBox--modificationDate {
-      color: #828282;
-      font-size:  0.875rem;
-      text-align: right;
-      display: inline-block;
-      line-height: 1.688rem;
-      vertical-align: top;
+   .favorite-icon {
+      position: absolute;
+      right: 15px;
+      top:7px;
+      z-index: 2;
+   
+      i {
+       color: #E0E0E0;
+      }
+      &.favorite-icon--selected i{
+         color:#2F80ED;
+      }
+      &:hover i {
+         color: #828282;
+         cursor: pointer;
+      }
    }
-}

@@ -10,9 +10,14 @@
       margin-top:10px;
    }
 
+   .hide-filters-mobile-btn {
+      display: none;
+   }
+
    .filterBox {
       background-color: #F2F2F2;
       border-radius: 10px;
+      margin-bottom: 30px;
 
       .btn {
          display: block;
@@ -84,7 +89,7 @@
       .filterBox--secondLevel{ 
          > .btn{
             font-size: 1.125rem;
-            margin-left: 30px;
+            margin-left: 12%;
             padding:  12px 35px 12px 0;
          }
          li {
@@ -95,5 +100,68 @@
    }
 }
 
+ @media (max-width: 767px) {
+   
+   .show-filters-mobile-btn {
+      display: inline-block;
+   }
 
+   .result-content-filters {
+      position: static;
+   }
+
+   .filter-section { 
+      display: none;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: auto;
+      padding: 0 15px 15px 15px;
+      background-color: #FFF;
+      overflow: auto;
+      z-index: 3;
+      opacity: 0;
+      transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  overflow: hidden;
+  width: 0;
+
+      &.filter-section--in {
+         display: block;
+         opacity: 1;
+         right: 0;
+         transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  overflow:auto;
+  width: 100%;
+
+
+      }
+  
+      h3 {
+         text-transform: uppercase;
+         line-height: 45px;
+         margin:0;
+
+      }
+
+      .hide-filters-mobile-btn {
+         display: inline-block;
+
+         i {width: 45px;
+            line-height: 45px;
+            vertical-align: middle;
+         }
+      }
+   }
+
+
+ }
 

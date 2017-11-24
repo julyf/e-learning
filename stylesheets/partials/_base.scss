@@ -9,27 +9,41 @@ body, html {
 }
 //Extra small viewport or screen
 @media (min-width: 320px) { 
-   body,html { font-size: 13px; background-color: yellow} 
+   body,html { font-size: 15px; 
+      //background-color: yellow
+   }
+   .inner-wrapper { padding: 0 0.3125rem}
 }
 
 // Small viewport or screen
 @media (min-width: 576px) { 
-   body,html { font-size: 14px; background-color: red} 
+   body,html { font-size: 15px; 
+     // background-color: red
+   }
+   .inner-wrapper { padding:  0 0.9375rem;}
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
-   body,html { font-size: 15px; background-color: blue}
+   body,html { font-size: 15px; 
+      //background-color: blue
+   }
+   .inner-wrapper { padding:  0 1.25rem;}
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
-   body,html { font-size: 16px;background-color: green} 
+   body,html { font-size: 16px;
+      //background-color: green
+   } 
+
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
-   body ,html{ font-size: 16px;background-color: pink}
+   body ,html{ font-size: 16px;
+      //background-color: pink
+   }
 }
 
 
@@ -52,12 +66,30 @@ a {
    font-size: 1rem;
 }
 
+
+.btn-rounded {
+   border: 1px solid #2F80ED;
+   border-radius: 20px;
+   line-height: 40px;
+   padding: 0 20px;
+   display: inline-block;
+   &:hover {
+      text-decoration: none;
+   }
+}
+
+
 .inner-wrapper {
    max-width: 1320px;
    margin:  0 auto;
-   padding:  0 1.25rem;
+   
    width: 100%;
 }
 
+.grey-box {
+   
+}
+.is--hide { display: none !important}
+.is--center {text-align: center;}
 
 
