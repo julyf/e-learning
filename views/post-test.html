@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+   <title>Post-test</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+
+   <div class="wrapper course-content test-content ">
+      		
+      <div class="header">
+         <nav class="navbar">
+            <div class="inner-wrapper">
+               <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-3 navbar--logoBox">
+                     <a href="#">
+                        <span class="logo-content"><img src="../img/logo.svg" alt=""></span>
+                        <p>Student <span>Dashboard</span></p>
+                     </a>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-3 col-sm-push-6 navbar--userBox">
+                     <p class="navbar--userBox-name">Nombre Apellido Nombre Apellido</p>
+                     <img class="navbar--userBox-img" src="http://via.placeholder.com/45x45" alt="">
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-sm-pull-3 navbar--searchBox">
+                     <form>
+                        <div class="navbar--searchBox-content">
+                           <input type="text" class="nav-searchBox--input">
+                           <button type="submit" class="nav-searchBox--iconSearch"><i class="material-icons">search</i></button>
+                           <button type="reset" class="nav-searchBox--iconClose is--hide"><i class="material-icons">close</i></button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div> 
+         </nav>
+      </div>
+
+      <!--div class="course-header">
+        			 <span class="logo-content"><img src="../img/logo.svg" alt=""></span>
+        			<div class="modal-title-content">
+        				<h4 class="modal-title">Cataract Surgery: Uveitis</h4>
+        				<h5 class="modal-subtitle">Perioperative management of complex phacoemulsification</h5>
+        			</div>
+      		</div-->
+   	<div class="course-body ">
+   		<div class="grey-box">
+   			<div class="inner-wrapper">
+   				<p class="test--question-number">Post Test Questions 1/2</p>
+					<h2 class="test--question">Which of the following instruments is best suited for pupil expansion in patients with synechiae to the anterior lens capsule?</h2>
+				</div>
+   		</div>
+   		<div class="inner-wrapper">
+      		<ul class="test--answers-list">
+      			<li>
+      				<label class="is--selected" for="a1">
+      					<input type="radio" name="questions" checked="checked" id="a1"> A. Kuglen Hooks
+      				</label>
+      			</li>
+      			<li>
+      				<label for="a2">
+      					<input type="radio" name="questions" id="a2"> B. Left and Right Curved sharp scissors 
+      				</label>
+      			</li>
+      			<li>
+      				<label for="a3">
+      					<input type="radio" name="questions" id="a3"> C. None of the above can be used safely
+      				</label>
+      			</li>
+      			<li>
+      				<label for="a4">
+      					<input type="radio" name="questions" id="a4"> D. 0.12 Castroviejo Forceps
+      				</label>
+      			</li>
+      			<li>
+      				<label for="a5">
+      					<input type="radio" name="questions" id="a5"> E. Non of the above
+      				</label>
+      			</li>
+      		</ul>
+     		</div>
+  		</div>
+      <div class="course-footer">
+        	<button type="button" class="btn-rounded btn-back">Back</button>
+        	<button type="button" class="btn-rounded btn-rounded-primary btn-next">Next</button>
+      </div>
+   </div><!-- /.course-content -->
+
+
+
+
+<!-- Optional JavaScript --> 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+<script>
+	$('.test--answers-list label').on('click', function(){
+		$('label').removeClass('is--selected');
+    	$(this).addClass('is--selected');
+	});
+</script>
+
+
+</body>
+</html>

@@ -5820,7 +5820,8 @@ body, html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  height: 100%; }
 
 @media (min-width: 320px) {
   body, html {
@@ -5851,35 +5852,63 @@ body, html {
 a {
   color: #2F80ED; }
   a:hover {
-    text-decoration: underline; }
+    text-decoration: none; }
 
-.btn.focus, .btn:focus, input {
+* {
+  outline: none; }
+
+.btn.focus, .btn:focus, input, *:focus {
   box-shadow: none !important;
   outline: none !important; }
 
 .btn-transparent {
   background-color: transparent;
-  font-size: 1rem; }
+  font-size: 1rem;
+  border-color: transparent;
+  text-decoration: none; }
+  .btn-transparent:hover {
+    text-decoration: none; }
 
 .btn-rounded {
   border: 1px solid #2F80ED;
   border-radius: 20px;
   line-height: 40px;
   padding: 0 20px;
-  display: inline-block; }
+  display: inline-block;
+  color: #2F80ED; }
   .btn-rounded:hover {
     text-decoration: none; }
+
+.btn-rounded-primary {
+  background-color: #2F80ED;
+  color: #FFF; }
 
 .inner-wrapper {
   max-width: 1320px;
   margin: 0 auto;
   width: 100%; }
 
+.grey-box {
+  background-color: rgba(47, 128, 237, 0.1); }
+
 .is--hide {
   display: none !important; }
 
 .is--center {
   text-align: center; }
+
+.logo-content {
+  background-color: #FFF;
+  width: 43px;
+  line-height: 43px;
+  border-radius: 50%;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: center;
+  margin-right: 5px;
+  border: 1px solid #333333; }
+  .logo-content img {
+    height: 33px; }
 
 .header .navbar {
   background-color: #333333;
@@ -5892,6 +5921,15 @@ a {
   .header .navbar .navbar--logoBox a {
     display: block;
     margin-right: 20px; }
+    .header .navbar .navbar--logoBox a p {
+      margin: 0;
+      display: inline-block;
+      vertical-align: middle;
+      color: #FFF;
+      font-size: 1rem;
+      line-height: 1.1875rem; }
+      .header .navbar .navbar--logoBox a p span {
+        display: block; }
   .header .navbar .navbar--searchBox {
     text-align: center; }
     .header .navbar .navbar--searchBox .navbar--searchBox-content {
@@ -6362,3 +6400,251 @@ a {
       line-height: 60px; }
   .courseDetail--title {
     margin-top: 30px; } }
+
+/* .course-content {
+        border-radius: 0;
+         border:none;
+         box-shadow: none;
+
+         .course-header {
+            border-bottom: 0;
+            position: relative;
+            display: block;
+            padding: 20px 30px;
+            
+            .modal-logo {
+               display: inline-block;
+               vertical-align: middle;
+            }
+
+            .modal-title-content {
+               display: inline-block;
+               vertical-align: middle;
+               line-height: 1.1875rem;
+               width: calc(100% - 70px);
+            }
+            .modal-title {
+               font-size: 1rem;
+               font-weight: bold;
+               margin: 0;
+            }
+            .modal-subtitle {
+                font-size: 1rem;
+               font-weight: normal;
+                margin: 0;
+            }
+         }*/
+.course-body {
+  padding: 0;
+  min-height: calc(100% - 160px); }
+  .course-body .inner-wrapper {
+    max-width: 800px; }
+
+.course-footer {
+  display: block;
+  border-top: none;
+  padding: 15px;
+  background-color: #F8F8F8;
+  text-align: right;
+  min-height: 80px; }
+  .course-footer .btn-back {
+    float: left; }
+  .course-footer .btn-next {
+    width: 210px; }
+
+.test-content .inner-wrapper {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.test-content .grey-box .inner-wrapper {
+  padding-top: 4vw;
+  padding-bottom: 4vw; }
+
+.test-content .test--question-number {
+  font-size: 1.125rem;
+  color: #333333; }
+
+.test-content .test--question {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  line-height: 2rem; }
+
+.test-content .test--answers-list {
+  list-style: none;
+  padding: 4vw 0;
+  margin: 15px 0; }
+  .test-content .test--answers-list li {
+    list-style: none;
+    margin: 5px 0;
+    font-size: 1.125rem; }
+    .test-content .test--answers-list li label {
+      font-weight: normal;
+      color: #666666;
+      display: inline-block;
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer; }
+      .test-content .test--answers-list li label:hover {
+        color: #000; }
+      .test-content .test--answers-list li label.is--selected, .test-content .test--answers-list li label.is--selected:hover {
+        color: #2F80ED;
+        font-weight: bold; }
+    .test-content .test--answers-list li input {
+      position: absolute;
+      left: 3px;
+      top: 4px;
+      margin: 0; }
+
+.lecture-slide .lecture-slide--slideSection {
+  background-color: #F2F2F2;
+  text-align: center; }
+  .lecture-slide .lecture-slide--slideSection .slide-content {
+    margin: 1.875rem auto;
+    box-shadow: 0px 0px 10px #888;
+    position: relative;
+    max-width: 900px;
+    width: 96%; }
+    .lecture-slide .lecture-slide--slideSection .slide-content .loading-content {
+      display: none; }
+    .lecture-slide .lecture-slide--slideSection .slide-content.slide--is-loading .loading-content {
+      display: block;
+      background-color: rgba(255, 255, 255, 0.8);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 3;
+      text-align: center; }
+      .lecture-slide .lecture-slide--slideSection .slide-content.slide--is-loading .loading-content .icon-play {
+        background-color: rgba(235, 87, 87, 0.5);
+        border-radius: 50%;
+        color: #FFF;
+        height: 11.45vw;
+        left: 50%;
+        line-height: 11.45vw;
+        margin-left: -5.7vw;
+        max-height: 143px;
+        max-width: 143px;
+        position: absolute;
+        top: 50%;
+        vertical-align: middle;
+        width: 11.45vw;
+        transform: translateY(-50%); }
+        .lecture-slide .lecture-slide--slideSection .slide-content.slide--is-loading .loading-content .icon-play:after {
+          animation: spin 0.75s infinite linear;
+          transform: rotate(65deg);
+          border-color: transparent;
+          border-radius: inherit;
+          border-style: solid;
+          border-top-color: #EB5757;
+          border-width: 0.5vw;
+          content: '';
+          display: block;
+          height: inherit;
+          left: 0px;
+          position: absolute;
+          top: 0px;
+          width: inherit; }
+        .lecture-slide .lecture-slide--slideSection .slide-content.slide--is-loading .loading-content .icon-play i {
+          font-size: 7vw;
+          vertical-align: middle; }
+    .lecture-slide .lecture-slide--slideSection .slide-content .course-slide-img {
+      max-width: 900px;
+      width: 100%; }
+
+.lecture-slide .lecture-slide--linkSection {
+  background-color: #F8F8F8;
+  border-left: 1px solid #E0E0E0;
+  padding: 0;
+  overflow: auto; }
+  @media (max-width: 767px) {
+    .lecture-slide .lecture-slide--linkSection {
+      border-top: 1px solid #E0E0E0; } }
+  .lecture-slide .lecture-slide--linkSection .lecture-slide--links-box {
+    border-bottom: 1px solid #E0E0E0;
+    padding: 0 20px; }
+    .lecture-slide .lecture-slide--linkSection .lecture-slide--links-box .btn-transparent {
+      display: block;
+      color: #4F4F4F;
+      font-size: 0.875rem;
+      padding: 0 30px 0 0px;
+      position: relative;
+      text-align: left;
+      line-height: 3.2rem; }
+      .lecture-slide .lecture-slide--linkSection .lecture-slide--links-box .btn-transparent:hover {
+        text-decoration: none; }
+      .lecture-slide .lecture-slide--linkSection .lecture-slide--links-box .btn-transparent i {
+        transform: rotate(0deg);
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        color: #BDBDBD;
+        margin-top: -12px; }
+      .lecture-slide .lecture-slide--linkSection .lecture-slide--links-box .btn-transparent.collapsed i {
+        transform: rotate(180deg); }
+    .lecture-slide .lecture-slide--linkSection .lecture-slide--links-box ul {
+      padding: 0 0 20px 0;
+      margin: 0; }
+      .lecture-slide .lecture-slide--linkSection .lecture-slide--links-box ul li {
+        list-style: none;
+        margin-bottom: 15px;
+        font-size: 0.875rem; }
+        .lecture-slide .lecture-slide--linkSection .lecture-slide--links-box ul li:last-child {
+          margin-bottom: 0; }
+    .lecture-slide .lecture-slide--linkSection .lecture-slide--links-box:last-child {
+      border-bottom: 0; }
+  .lecture-slide .lecture-slide--linkSection .lecture-slide-attachments-box {
+    min-height: 175px; }
+    @media (max-width: 767px) {
+      .lecture-slide .lecture-slide--linkSection .lecture-slide-attachments-box {
+        min-height: 0; } }
+  .lecture-slide .lecture-slide--linkSection .lecture-slide-link-name {
+    margin: 0;
+    color: #BDBDBD; }
+  .lecture-slide .lecture-slide--linkSection .lecture-slide-link {
+    width: calc(100% - 55px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px; }
+  .lecture-slide .lecture-slide--linkSection .btn-report {
+    display: inline-block;
+    vertical-align: middle; }
+
+.lecture-slide .lecture-slide-footer {
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0; }
+  .lecture-slide .lecture-slide-footer div[class^="col-"] {
+    padding: 15px; }
+  .lecture-slide .lecture-slide-footer .lecture-slide--slideSection-footer {
+    text-align: center; }
+  .lecture-slide .lecture-slide-footer .lecture-slide--linkSection-footer {
+    border-left: 1px solid #E0E0E0;
+    text-align: center; }
+    .lecture-slide .lecture-slide-footer .lecture-slide--linkSection-footer * {
+      vertical-align: middle; }
+    .lecture-slide .lecture-slide-footer .lecture-slide--linkSection-footer .btn-prev {
+      float: left;
+      color: #2F80ED;
+      line-height: 42px;
+      padding: 0;
+      margin: 0;
+      border: 0; }
+    .lecture-slide .lecture-slide-footer .lecture-slide--linkSection-footer .page-number {
+      display: inline-block;
+      color: #828282;
+      font-size: 1rem;
+      line-height: 42px;
+      padding: 0 10px; }
+    .lecture-slide .lecture-slide-footer .lecture-slide--linkSection-footer .btn-rounded-primary {
+      float: right; }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
