@@ -6285,11 +6285,10 @@ a {
 
 .courseDetail-content,
 .similar-lectures {
-  padding-left: 10%;
-  padding-right: 10%; }
+  margin: 0 auto;
+  max-width: 1100px; }
 
 .courseDetail-content {
-  background-color: rgba(47, 128, 237, 0.1);
   padding-top: 60px;
   padding-bottom: 30px; }
 
@@ -6345,7 +6344,7 @@ a {
 
 .courseDetail--keyWords {
   color: #2F80ED;
-  padding: 10px 0; }
+  padding: 5px 0; }
   .courseDetail--keyWords a {
     font-size: 0.75rem;
     line-height: 1.313rem; }
@@ -6356,6 +6355,12 @@ a {
   .courseDetail--author span,
   .courseDetail--section span {
     padding-right: 15px; }
+    @media (max-width: 767px) {
+      .courseDetail--author span,
+      .courseDetail--section span {
+        display: block;
+        padding-right: 0;
+        margin-bottom: 2px; } }
     .courseDetail--author span:last-child,
     .courseDetail--section span:last-child {
       padding-right: 0; }
@@ -6445,8 +6450,7 @@ a {
   border-top: none;
   padding: 15px;
   background-color: #F8F8F8;
-  text-align: right;
-  min-height: 80px; }
+  text-align: right; }
   .course-footer .btn-back {
     float: left; }
   .course-footer .btn-next {
@@ -6648,3 +6652,52 @@ a {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+
+.feedback-section .courseDetail-content {
+  padding-bottom: 8%;
+  padding-top: 30px; }
+
+.feedback-section .feedback-form {
+  padding-bottom: 8%; }
+
+.feedback-section .feedback-success-msj {
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  margin: 0;
+  padding: 20px 0 30px 0; }
+
+.feedback-section label {
+  display: inline-block;
+  text-align: right;
+  font-size: 1rem;
+  color: #4F4F4F;
+  line-height: 2.5rem;
+  vertical-align: top;
+  font-weight: 400;
+  margin: 0 15px 0 0;
+  width: 200px; }
+  @media (max-width: 767px) {
+    .feedback-section label {
+      text-align: left;
+      width: auto; } }
+
+.feedback-section .courseBox--calification {
+  display: inline-block;
+  line-height: 2.5rem; }
+  .feedback-section .courseBox--calification i {
+    cursor: pointer; }
+
+.feedback-section textarea {
+  border: 1px solid #BDBDBD;
+  border-radius: 20px;
+  min-height: 120px;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 0.875rem;
+  width: calc(100% - 220px);
+  background-color: transparent;
+  max-width: 550px; }
+  @media (max-width: 767px) {
+    .feedback-section textarea {
+      width: 100%; } }
