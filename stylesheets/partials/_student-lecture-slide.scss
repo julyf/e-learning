@@ -134,18 +134,6 @@
                }
             }
          }
-
-         
-         &:last-child {
-            border-bottom: 0;
-         }
-      }
-
-      .lecture-slide-attachments-box {
-         min-height: 175px;
-          @media (max-width: 767px) {
-            min-height: 0;
-          }
       }
 
       .lecture-slide-link-name {

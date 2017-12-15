@@ -6568,13 +6568,6 @@ a {
         font-size: 0.875rem; }
         .lecture-slide .lecture-slide--linkSection .lecture-slide--links-box ul li:last-child {
           margin-bottom: 0; }
-    .lecture-slide .lecture-slide--linkSection .lecture-slide--links-box:last-child {
-      border-bottom: 0; }
-  .lecture-slide .lecture-slide--linkSection .lecture-slide-attachments-box {
-    min-height: 175px; }
-    @media (max-width: 767px) {
-      .lecture-slide .lecture-slide--linkSection .lecture-slide-attachments-box {
-        min-height: 0; } }
   .lecture-slide .lecture-slide--linkSection .lecture-slide-link-name {
     margin: 0;
     color: #BDBDBD; }
