@@ -6006,12 +6006,14 @@ a {
       padding: 10px; } }
   .top-bar .filter--orderBy {
     float: left;
-    line-height: 2.375rem; }
+    line-height: 2.375rem;
+    position: absolute; }
     @media (max-width: 767px) {
       .top-bar .filter--orderBy {
         width: 49%;
         padding-bottom: 10px;
-        text-align: left; } }
+        text-align: left;
+        position: static; } }
     .top-bar .filter--orderBy .dropdown-toggle {
       font-weight: bold;
       color: #828282; }
