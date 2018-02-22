@@ -1,0 +1,87 @@
+
+.teacher-list {
+	.filter-section {
+		h3 {
+			display: none;
+			 @media (max-width: 767px) {
+			 	display: block;
+			 }
+		}
+	}
+}
+
+.teacherBox  {
+
+
+	.courseBox--name {
+		margin-top: 15px;
+	}
+
+	.courseBox--modificationDate {
+		text-align: right;
+		display: block;
+	}
+
+
+	.teacherBox-status {
+		font-size: 0.75rem;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+
+		&.teacherBox-status--invited {
+			color:#EB5757; 
+		}
+		&.teacherBox-status--draft {
+			color: #F2994A;
+		}
+		&.teacherBox-status--published {
+			color: #27AE60;
+		}
+	}
+}
+
+.courseBox--img-empty {
+	background-color: #F7F7F7;
+	border: 1px solid #828282;
+	text-align: center;
+	padding-top: 200px / 300px * 100%;
+	position: relative;
+
+	img.envelope-icon {
+		position: absolute;
+		top: 18%;
+		width: 60px;
+		transform: translateX(-50%);
+		left: 50%;
+		opacity: 0.5;
+	}
+
+	.btn-content {
+		bottom: 18%;
+		position: absolute;
+		width: 100%;
+
+		.btn-rounded {
+			margin: 0 1%;
+			padding: 0 6%;
+		}
+	}
+
+
+}
+
+
+
+.dividing-line {
+	border-top: 1px solid #828282;
+	clear: both;
+	height: 1px;
+	display: block;
+	margin: 0 15px 30px 15px;
+	width: 100%;
+}
+
+.declineMessage-textarea {
+	font-size: 0.875rem;
+}

@@ -30,7 +30,9 @@
          a {
             display: block;
             margin-right: 20px;
-
+            @media (max-width: 768px) {
+               margin-right: 0px;
+            }
             
 
             p {
@@ -125,6 +127,14 @@
             display: inline-block;
             width: calc(100% - 60px);
             margin: 0;
+
+            @media (max-width: 767px) {
+               position: relative;
+               overflow: hidden;
+               max-height: 35px;
+            }
+            
+
          }
 
          .navbar--userBox-img {
@@ -139,6 +149,27 @@
       }
    }
 }
+
+.col-sm-push-6 {
+   left: 50%;
+   @media (max-width: 767px) { 
+      left: 0;
+   }
+}
+
+.col-sm-pull-3 {
+   right: 25%;
+   @media (max-width: 767px) {
+      right: 0;
+   }
+}
+
+@media (max-width: 767px) {
+   .col-xs-6 {
+      width: 50%;
+   }
+}  
+
 
 
 //BARRA GRIS

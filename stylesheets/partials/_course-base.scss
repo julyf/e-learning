@@ -15,15 +15,34 @@
    background-color: #F8F8F8;
    text-align: right;
 
+   .btn-rounded {
+      margin-right: 10px;
+      @media all and (max-width: 767px) {
+         margin: 5px 0;
+      }
+   }
+
    .btn-back {
       float: left;
       background-color: transparent;
+      margin-right: 0px;
+      @media all and (max-width: 767px) {
+         font-size: 13px
+      }
    }
 
    .btn-next {
       width: 210px;
+      margin-right: 0px;
       @media all and (max-width: 767px) {
-         width: 190px;
+         width: auto;
+         min-width: 180px;
+         font-size: 13px;
+      }
+   }
+   .btn-block {
+      @media all and (max-width:  576px) {
+         width: 100%;
       }
    }
 }

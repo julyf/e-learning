@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+   <title>New Lecture</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/styles.css">
+
+<script src="../js/ng-file-upload-shim.js"></script>
+<script src="../js/ng-file-upload.js"></script>
+<script src="../js/upload.js"></script>
+
+
+</head>
+<body>
+<div class="wrapper new-lecture">
+   <div class="header">
+      <nav class="navbar">
+         <div class="inner-wrapper">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-6 col-sm-6 col-md-3 navbar--logoBox">
+                     <a href="#">
+                        <span class="logo-content"><img src="../img/logo.svg" alt=""></span>
+                        <p>Teacher <span>Dashboard</span></p>
+                     </a>
+                  </div>
+                  <div class="col-6 col-sm-6 col-md-3 col-sm-push-6 navbar--userBox">
+                     <p class="navbar--userBox-name">Nombre Apellido Nombre Apellido</p>
+                     <img class="navbar--userBox-img" src="http://via.placeholder.com/45x45" alt="">
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-sm-pull-3 navbar--searchBox">
+                     <form>
+                        <div class="navbar--searchBox-content">
+                           <input type="text" class="nav-searchBox--input">
+                           <button type="submit" class="nav-searchBox--iconSearch"><i class="material-icons">search</i></button>
+                           <button type="reset" class="nav-searchBox--iconClose is--hide"><i class="material-icons">close</i></button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div> 
+         </div>
+      </nav>
+   </div>
+
+   <form action="" method="">
+      <div class="content new-lecture-form-content">
+         <div class="inner-wrapper">
+      
+            <div class="row">
+               <div class="col-12  col-sm-12 col-md-12  is--center">
+                  <ul class="steps">
+                     <li class="steps--is-complete">
+                        <a href="#">
+                           <span class="steps-number ">1</span>
+                           <span class="steps-text">CREATE</span>
+                        </a>
+                     </li>
+                     <li class="steps--is-active">
+                        <span class="steps-number">2</span>
+                        <span class="steps-text">UPLOAD</span>
+                     </li>
+                     <li class="steps--is-disabled">
+                        <span class="steps-number">3</span>
+                        <span class="steps-text">REVIEW</span>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-12 col-sm-12 col-md-8 offset-md-2">
+                  <!--div class="drag-zone">
+                     <p>Drag and drop a presentation here</p>
+                     or
+                  </div-->
+
+                  <div class="up-buttons drag-zone">
+                     <div ngf-select ngf-drop ng-model="files" ngf-model-invalid="invalidFiles"
+                         ngf-model-options="modelOptionsObj"
+                         ngf-multiple="multiple" ngf-pattern="pattern" ngf-accept="acceptSelect"
+                         ng-disabled="disabled" ngf-capture="capture"
+                         ngf-drag-over-class="dragOverClassObj"
+                         ngf-validate="validateObj"
+                         ngf-resize="resizeObj"
+                         ngf-resize-if="resizeIfFn($file, $width, $height)"
+                         ngf-dimensions="dimensionsFn($file, $width, $height)"
+                         ngf-duration="durationFn($file, $duration)"
+                         ngf-keep="keepDistinct ? 'distinct' : keep"
+                         ngf-fix-orientation="orientation"
+                         ngf-max-files="maxFiles"
+                         ngf-ignore-invalid="ignoreInvalid"
+                         ngf-run-all-validations="runAllValidations"
+                         ngf-allow-dir="allowDir" class="drop-box" ngf-drop-available="dropAvailable">Drag and drop a presentation here
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-12 col-sm-12 col-md-8 offset-md-2">
+                  <div class="file-input-content rounded-input">
+                     <input type="file" ngf-select="" ng-model="picFile" name="file" ngf-accept="'image/*'" required="" class="ng-pristine ng-invalid ng-invalid-required" accept="image/*">
+                  </div>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-12 col-sm-12 col-md-8 offset-md-2">
+
+
+                  <ul class="response">
+                     <li class="sel-file" ng-repeat="f in files">
+                        <div>
+                           <img ngf-thumbnail="!f.$error && f" class="thumb">
+                           <div class="progress-info">
+                              <span class="progress" ng-show="f.progress >= 0">
+                                 <div style="width:{{f.progress}}%">{{f.progress}}%</div>
+                              </span>
+                              <!--button class="button" ng-click="f.upload.abort();f.upload.aborted=true" 
+                                 ng-show="f.upload != null && f.progress < 100 && !f.upload.aborted">
+                                 Abort<span ng-show="isResumeSupported">/Pause</span>
+                              </button-->
+                              <button class="button" ng-click="upload(f, true);f.upload.aborted=false"
+                                 ng-show="isResumeSupported && f.upload != null && f.upload.aborted">Resume
+                              </button>
+                              <button class="button" ng-click="restart(f);f.upload.aborted=false"
+                                 ng-show="isResumeSupported && f.upload != null && (f.progress == 100 || f.upload.aborted)">Restart
+                              </button>
+                              <p class="file-info">{{f.name}}.{{f.type}} - Size: {{f.size}}B</p>
+                           </div>
+                        </div>
+                     </li>
+
+                     <li class="sel-file" ng-repeat="f in files">
+                        <div>
+                           <img ngf-thumbnail="!f.$error && f" class="thumb" src="../img/curso-img.png">
+                           <div class="progress-info">
+                              <span class="progress" ng-show="f.progress >= 0">
+                                 <div style="width:66%">66%</div>
+                              </span>
+                              <button class="button" ng-click="f.upload.abort();f.upload.aborted=true" 
+                                 ng-show="f.upload != null && f.progress < 100 && !f.upload.aborted">
+                                 Abort<span ng-show="isResumeSupported">/Pause</span>
+                              </button>
+                              <!--button class="button" ng-click="upload(f, true);f.upload.aborted=false"
+                                 ng-show="isResumeSupported && f.upload != null && f.upload.aborted">Resume
+                              </button>
+                              <button class="button" ng-click="restart(f);f.upload.aborted=false"
+                                 ng-show="isResumeSupported && f.upload != null && (f.progress == 100 || f.upload.aborted)">Restart
+                              </button-->
+                              <p class="file-info">presentation.jpg - Size: 99B</p>
+                           </div>
+                        </div>
+                        
+                     </li>
+                     <li class="sel-file" ng-repeat="f in invalidFiles">
+                        <div class="sel-file-error-msj">Invalid File: {{f.$errorMessages}} {{f.$errorParam}}, {{f.name}} - size: {{f.size}}B - type: {{f.type}}
+                        </div>
+                     </li>
+                  </ul>
+           
+               <div>
+            </div>
+
+</div>
+           
+         </div>
+      </div>
+      <div class="course-footer">
+         <button type="button" class="btn-rounded btn-back">CANCEL</button>
+         <button type="button" class="btn-rounded btn-rounded-primary btn-next">SAVE AND CONTINUE</button>
+      </div>
+   </form>
+</div>       
+         
+
+
+     
+   
+
+
+
+
+<!-- Optional JavaScript --> 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script >
+//inject directives and services.
+var app = angular.module('fileUpload', ['ngFileUpload']);
+
+app.controller('MyCtrl', ['$scope', 'Upload', function ($scope, Upload) {
+    // upload later on form submit or something similar
+    $scope.submit = function() {
+      if ($scope.form.file.$valid && $scope.file) {
+        $scope.upload($scope.file);
+      }
+    };
+
+    // upload on file select or drop
+    $scope.upload = function (file) {
+        Upload.upload({
+            url: 'upload/url',
+            data: {file: file, 'username': $scope.username}
+        }).then(function (resp) {
+            console.log('Success ' + resp.config.data.file.name + 'uploaded. Response: ' + resp.data);
+        }, function (resp) {
+            console.log('Error status: ' + resp.status);
+        }, function (evt) {
+            var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
+            console.log('progress: ' + progressPercentage + '% ' + evt.config.data.file.name);
+        });
+    };
+    // for multiple files:
+    $scope.uploadFiles = function (files) {
+      if (files && files.length) {
+        for (var i = 0; i < files.length; i++) {
+          Upload.upload({..., data: {file: files[i]}, ...})...;
+        }
+        // or send them all together for HTML5 browsers:
+        Upload.upload({..., data: {file: files}, ...})...;
+      }
+    }
+}]);
+</script>
+</body>
+</html>

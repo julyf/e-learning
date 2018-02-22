@@ -97,8 +97,29 @@
 
          }   
       }
+
+      &.filterBox--white {
+         background-color: #FFF;
+         .btn {
+            color: #828282;
+            font-size: 1rem;
+            border-top: 0;
+            padding: 10px 35px 10px 0px;
+         }
+
+         ul li:hover,
+         ul li a:hover
+          {
+            background-color: #F9F9F9;
+         }
+      }
    }
 }
+
+
+
+
+
 
  @media (max-width: 767px) {
    

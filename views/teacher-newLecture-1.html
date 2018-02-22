@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+   <title>New Lecture</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<div class="wrapper new-lecture">
+   <div class="header">
+      <nav class="navbar">
+         <div class="inner-wrapper">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-3 navbar--logoBox">
+                     <a href="#">
+                        <span class="logo-content"><img src="../img/logo.svg" alt=""></span>
+                        <p>Teacher <span>Dashboard</span></p>
+                     </a>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-3 col-sm-push-6 navbar--userBox">
+                     <p class="navbar--userBox-name">Nombre Apellido Nombre Apellido</p>
+                     <img class="navbar--userBox-img" src="http://via.placeholder.com/45x45" alt="">
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-sm-pull-3 navbar--searchBox">
+                     <form>
+                        <div class="navbar--searchBox-content">
+                           <input type="text" class="nav-searchBox--input">
+                           <button type="submit" class="nav-searchBox--iconSearch"><i class="material-icons">search</i></button>
+                           <button type="reset" class="nav-searchBox--iconClose is--hide"><i class="material-icons">close</i></button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div> 
+      </nav>
+   </div>
+
+   <form action="" method="">
+      <div class="content new-lecture-form-content">
+         <div class="inner-wrapper">
+      
+            <div class="row">
+               <div class="col-12  col-sm-12 col-md-12  is--center">
+                  <ul class="steps">
+                     <li class="steps--is-active">
+                        <span class="steps-number">1</span>
+                        <span class="steps-text">CREATE</span>
+                     </li>
+                     <li class="steps--is-disabled">
+                        <span class="steps-number">2</span>
+                        <span class="steps-text">UPLOAD</span>
+                     </li>
+                     <li class="steps--is-disabled">
+                        <span class="steps-number">3</span>
+                        <span class="steps-text">REVIEW</span>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-12 col-sm-12 col-md-3">
+                  <label class="form-label">Lecture Title</label>
+               </div>
+               <div class="col-12 col-sm-12 col-md-6">
+                  <input type="text" class="rounded-input" placeholder="Please name your lecture as specifically as you can">
+               </div>
+               <div class="col-12 col-sm-12 col-md-3">
+                  <p class="form-error-msj is--hide">Error aqui</p>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-12 col-sm-12 col-md-3">
+                  <label class="form-label">Author</label>
+               </div>
+               <div class="col-12 col-sm-12 col-md-6">
+                  <input type="text" class="rounded-input" placeholder="Dr. John Smith">
+               </div>
+               <div class="col-12 col-sm-12 col-md-3">
+                  <p class="form-error-msj is--hide">Error aqui</p>
+               </div>
+            </div>
+
+            <div class="row row--has-error">
+               <div class="col-12 col-sm-12 col-md-3">
+                  <label class="form-label has-error">Key Words</label>
+               </div>
+               <div class="col-12 col-sm-12 col-md-6">
+                  <input type="text" class="rounded-input has-error">
+               </div>
+               <div class="col-12 col-sm-12 col-md-3">
+                  <p class="form-error-msj">Please include at least one key word.</p>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-12 col-sm-12 col-md-3">
+                  <label class="form-label has-error">Objectives</label>
+               </div>
+               <div class="col-12 col-sm-12 col-md-6">
+                  <textarea class="rounded-textarea has-error" placeholder="Please include a few objectives that you wish your students to achieve by peforming this module"></textarea>
+               </div>
+               <div class="col-12 col-sm-12 col-md-3">
+                  <p class="form-error-msj">Error aqui</p>
+               </div>
+            </div>
+
+            <div class="row row--has-error">
+               <div class="col-12 col-sm-12 col-md-3">
+                  <label class="form-label has-error">Topic</label>
+               </div>
+               <div class="col-12 col-sm-6 col-md-3">
+                  <div class="select-content has-error">
+                     <select class="rounded-select">
+                        <option>Please select the lecture section</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="col-12 col-sm-6 col-md-3">
+                  <div class="select-content has-error">
+                     <select class="rounded-select">
+                        <option>Please select the lecture sub section</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="col-12 col-sm-12 col-md-3">
+                  <p class="form-error-msj">Please select the section and sub-section from the menus</p>
+               </div>
+            </div>
+
+
+            <div class="row">
+               <div class="col-12 col-sm-12 col-md-3">
+                  <label class="form-label">Invite collaborator by email</label>
+               </div>
+               <div class="col-12 col-sm-12 col-md-6">
+                  <input type="text" class="rounded-input" placeholder="Optional: Please include email addresses of any collaborators separated a comma">
+               </div>
+               <div class="col-12 col-sm-12 col-md-3">
+                  <p class="form-error-msj is--hide">Error aqui</p>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-12 col-sm-12 col-md-3">
+                  <label class="form-label">Access</label>
+               </div>
+               <div class="col-12 col-sm-12 col-md-6">
+                  <div class="select-content">
+                     <select class="rounded-select">
+                        <option>All Institutions</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="col-12 col-sm-12 col-md-3">
+                  <p class="form-error-msj is--hide">Error aqui</p>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-12 col-sm-12 col-md-3">
+                  <label class="form-label title-image-label">Tile Image</label>
+               </div>
+               <div class="col-12 col-sm-12 col-md-6">
+                  <img src="http://via.placeholder.com/125x82" alt="" class="default-img">
+                  <div class="input-file-content">
+                     <input type="file" class="file-hidden">
+                     <span class="btn btn-text-only">CHANGE IMAGE</span>
+                  </div>
+               </div>
+               <div class="col-12 col-sm-12 col-md-3">
+                  <p class="form-error-msj is--hide">Error aqui</p>
+               </div>
+            </div>
+
+
+
+               
+         
+         </div>
+      </div>
+      <div class="course-footer">
+         <button type="button" class="btn-rounded btn-back">CANCEL</button>
+         <button type="button" class="btn-rounded btn-rounded-primary btn-next">SAVE AND CONTINUE</button>
+      </div>
+   </form>
+</div>       
+         
+
+
+  
+   
+
+
+
+
+<!-- Optional JavaScript --> 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+</html>

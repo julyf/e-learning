@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>31 -Flipboard- (Outline)</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-12065 -5677)">
+<g id="31 -Flipboard- (Outline)">
+<use xlink:href="#path0_fill" fill="url(#pattern0)" transform="translate(12065 5677)"/>
+</g>
+</g>
+<defs>
+<pattern id="pattern0" patternUnits="objectBoundingBox" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0" transform="matrix(0.0416667 0 0 0.0416667 0 0)"/>
+</pattern>
+<path id="path0_fill" d="M 0 0L 24 0L 24 24L 0 24L 0 0Z"/>
+<image id="image0" width="24" height="24" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAWVJREFUSA3VVbFxwzAMtHOpMoGbrJOcp8kUGSCDpLPcZxbv4CaF8i/xoSdFWrLOTXBHAXg8ABKi7F3f90esC5aE9nF3QxDvRDbdVVNA8OLiX6pkgCDUiitv3kQRFSx94dKKQ58Mi6bCQitBQMWPZMWoxZf2mNndvkZm0h5CvRQnh9LiPY3h5ScbUpaYI2viRYMyUCuEXcZL5I5dxAcWHGIxIu2OSUMg7dZ92SrW0qwl7nOLdAvXZkqOijoeI3JwjY1ifruysXj+5gZeBPbs2ioes9KxdcyaX8ZURNrjsjefAAU0ouZ42HhzA+0aujkecv7FiDju5pjiOwDp1459r9kcU4yorPioW8QTXLFesL5Sk4+EJXeuOJM5Wkd4iz5T6BWaiyJs9KbneTKbVv4+sJkD51+sg9KBDyJ/rc7y4HwLoO1FhDu2xs7y4LwLgH7zAoZvModayORt+kkr+9cCpp8EmHfL6Q8IiWVhHrg4MwAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>

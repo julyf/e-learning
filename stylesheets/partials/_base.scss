@@ -5,21 +5,20 @@ body, html {
    -webkit-text-size-adjust: 100%;
    padding: 0;
    margin: 0;
-   height: 100%;
-   
+   height: 100%; 
 }
 //Extra small viewport or screen
-@media (min-width: 320px) { 
-   body,html { font-size: 15px; 
-      //background-color: yellow
+@media (min-width: 0px) { 
+   body,html { 
+      font-size: 14px; 
    }
    .inner-wrapper { padding: 0 0.3125rem}
 }
 
 // Small viewport or screen
 @media (min-width: 576px) { 
-   body,html { font-size: 15px; 
-     // background-color: red
+   body,html { 
+      font-size: 15px; 
    }
    .inner-wrapper { padding:  0 0.9375rem;}
 }
@@ -27,7 +26,6 @@ body, html {
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
    body,html { font-size: 15px; 
-      //background-color: blue
    }
    .inner-wrapper { padding:  0 1.25rem;}
 }
@@ -35,7 +33,6 @@ body, html {
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
    body,html { font-size: 16px;
-      //background-color: green
    } 
 
 }
@@ -48,7 +45,11 @@ body, html {
 }
 
 
-
+.col-xs-12 {
+   width: 100%;
+   padding-left: 15px;
+   padding-right: 15px;
+}
 
 a {
    color: #2F80ED;
@@ -82,14 +83,33 @@ a {
    padding: 0 20px;
    display: inline-block;
    color: #2F80ED;
+   cursor: pointer;
    &:hover {
       text-decoration: none;
+   }
+
+   @media (max-width: 768px) {
+      padding: 0 12px;
+   }
+
+   &[disabled="disabled"] {
+      cursor: default;
+      opacity: 0.25;
    }
 }
 
 .btn-rounded-primary {
    background-color: #2F80ED;
    color: #FFF;
+}
+
+.btn-text-only {
+   color: #2F80ED;
+   display: inline-block;
+   line-height:  2.25rem;
+   font-weight: bold;
+   font-size:  0.875rem;
+   cursor: pointer;
 }
 
 
@@ -104,8 +124,254 @@ a {
    background-color: rgba(47, 128, 237, 0.1);
 }
 
+.drag-zone {
+   border-radius: 20px;
+   border: 1px solid #BDBDBD;
+   padding: 45px 30px;
+   text-align: center;
+   color: #828282;
+   font-size: 1.375rem;
+   margin: 10px auto;
+   width: 80%;
+
+   @media (max-width: 768px) {
+      width: 100%;
+   }
+
+   p {
+      margin: 0;
+   }
+}
 
 .is--hide { display: none !important}
 .is--center {text-align: center;}
+
+
+.steps {
+   text-align: center;
+   margin: 70px auto 60px auto;
+   padding: 0;
+   width: 100%;
+   max-width: 738px;
+   overflow: auto;
+
+   @media (max-width: 768px) {
+      margin: 50px auto 40px auto;
+   }
+
+   li {
+      display: inline-block;
+      width: 33.3%;
+      float: left;
+      position: relative;
+
+      &:not(:last-child):after{
+         content: "";
+         border-bottom: 1px solid #BDBDBD;
+         position: absolute;
+         left: calc(50% + 20px);
+         width: calc(100% - 35px);
+         top: 20px;
+         z-index: 2;
+      }
+
+
+      a, a:hover {
+         text-decoration: none;
+      }
+
+      .steps-number {
+         border-radius: 100%;
+         line-height: 40px;
+         width: 40px;
+         height: 40px;
+         display: inline-block;
+         font-size: 1.25rem;
+         background-color: #FFF;
+         position: relative;
+         z-index: 4;
+      }
+
+      .steps-text {
+         font-size: 1rem;
+         display: block;
+         line-height: 1.875rem;
+      }
+
+      &.steps--is-disabled {
+         .steps-number {
+            border: 1px solid #BDBDBD;
+            color: #BDBDBD;
+         }
+         .steps-text  {
+            color: #BDBDBD;
+         }
+      }
+
+      &.steps--is-active {
+         font-weight: bold;
+         .steps-number {
+            border: 1px solid #2F80ED;
+            color: #2F80ED;
+         }
+         .steps-text  {
+            color: #2F80ED;
+         }
+      }
+      &.steps--is-complete {
+         .steps-number {
+            border: 1px solid #2F80ED;
+            color: #FFF;
+            background-color: #2F80ED;
+            font-weight: bold;
+         }
+         .steps-text  {
+            color: #BDBDBD;
+         }
+      }
+   }
+}
+
+.rounded-input,
+.select-content,
+.rounded-textarea {
+   border: 1px solid #BDBDBD;
+   border-radius: 20px;
+   padding: 10px 20px;
+   margin:  10px 0;
+
+   @media all and (max-width: 767px) {
+      margin:  5px 0;
+   }
+
+   &.has-error {
+      border-color: #FF0000;
+   }
+
+   &.file-input-content {
+      padding: 7px 20px; 
+   }
+}
+
+.select-content {
+   padding: 10px;
+}
+.rounded-input,
+.rounded-select,
+.rounded-textarea {
+   font-size: 0.75rem;
+   color: #828282;
+   background-color: #FFF;
+   width: 100%;
+   @media all and (max-width: 767px) {
+      font-size: 0.8125rem;
+   }
+}
+
+.rounded-select {
+   border: none;
+   display: block;
+   width: 100%;
+}
+
+.rounded-textarea {
+   height: 140px;
+}
+
+.form-label {
+   display: block;
+   text-align: right;
+   font-size: 1rem;
+   color: #4F4F4F;
+   margin: 0;
+   font-weight: 400;
+   margin:  20px 0 10px 0;
+
+   @media all and (max-width: 767px) {
+      text-align: left;
+      margin:  20px 0 0 0;
+   }
+
+   &.has-error {
+      color: #FF0000;
+   }
+}
+
+.form-error-msj {
+   color: #828282;
+   font-size: 0.875rem;
+   margin:  10px 0;
+
+   @media all and (max-width: 767px) {
+      margin:  0;
+   }
+
+   &.form-error-msj-bottom {
+      margin-top: 0;
+   }
+}
+
+
+// SWITCH BNS
+.switch-row {
+   padding: 5px 0 5px 30px;
+
+   > label {
+      color: #4F4F4F;
+      font-size: 1rem;
+   }
+
+   &:last-child {
+      margin-bottom: 30px;
+   }
+}
+
+
+.btn-switch {
+   display: inline-block;
+   float: right;
+}
+
+input[type=checkbox].switch{
+   height: 0;
+   width: 0;
+   visibility: hidden;
+   position: absolute;
+}
+
+label.switch {
+   cursor: pointer;
+   text-indent: -9999px;
+   width: 65px;
+   height: 32px;
+   background-color: #F2F2F2;
+   border: 1px solid #E0E0E0;
+   display: block;
+   border-radius: 100px;
+   position: relative;
+   margin: 0;
+
+   &:after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 5px;
+      width: 24px;
+      height: 24px;
+      background: #fff;
+      border-radius: 90px;
+      transition: 0.3s;
+   }
+}
+
+input.switch:checked + label {
+   background: #f0869f;
+   border:1px solid #ed496d;
+
+   &:after {
+      left: calc(100% - 28px);
+   }
+}
+
 
 

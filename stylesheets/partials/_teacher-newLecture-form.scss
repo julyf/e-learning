@@ -1,0 +1,289 @@
+.new-lecture {
+	.new-lecture-form-content {
+		padding-bottom: 55px;
+
+		.inner-wrapper {
+			max-width: 90%;
+		}
+
+
+
+		//PASO 1
+
+		.title-image-label {
+			margin: 40px 0 10px 0;
+		}
+
+		.default-img {
+			border-radius: 20px;
+			vertical-align: middle;
+			margin: 10px 0;
+		}
+
+		.input-file-content {
+			display: inline-block;
+			vertical-align: middle;
+			position: relative;
+			width: 140px;
+		}
+		.file-hidden {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			opacity: 0;
+			cursor: pointer;
+			
+		}
+
+
+
+		//PASO 2
+
+		
+	
+
+		//PASO 3
+		.new-lecture--slideSection {
+			padding-left: 0;
+			padding-right: 0;
+			max-height: 493px;
+
+			.new-lecture-iframe-content {
+				position: relative;
+				
+  				@media (max-width: 992px) {
+  					height: 0;
+  					padding-bottom: 60%;
+  				}
+			}
+
+
+			.new-lecture-iframe {
+				width: 100%;
+				height: 493px;
+
+				@media (max-width: 992px) {
+					position: absolute;
+  					top: 0;
+				  	left: 0;
+				  	width: 100%;
+				  	max-height: 493px;
+				  	height: 100%;
+				}
+			}
+			.btn-rounded {
+				position: absolute;
+				bottom: 20px;
+				right: 20px;
+				background-color: #FFF;
+			}
+		}
+
+		.new-lecture--linkSection {
+			padding-left: 0;
+			padding-right: 0;
+
+			.panel-group--linkSection {
+				border-top:1px solid #2F80ED;
+				height: 100%;
+			}
+
+			.box {
+				border:1px solid #2F80ED;
+				border-top: none;
+			}
+
+
+
+			.panel-head {
+				
+				.panel-title {
+					margin: 0;
+				}
+
+				a {
+					padding: 15px 40px 15px 15px;
+					display: block;
+					color: #2F80ED;
+					font-size: 1rem;
+					position: relative;
+					text-decoration: none;
+
+					&:hover {
+						text-decoration: none;
+					}
+
+					.material-icons {
+						position: absolute;
+						right: 8px;
+						top: 50%;
+						transform: translateY(-50%) rotate(0deg);
+						transition: all 0.5s;
+					}
+
+					&.collapsed {
+						.material-icons {
+							transform: translateY(-50%) rotate(180deg);
+						}
+					}
+				}
+
+				
+			}
+
+			.panel-collapse {
+
+				.panel-body {
+					text-align: center;
+					min-height: 292px;
+					overflow-x: auto;
+					padding: 0 15px;
+				}
+
+	
+			}
+
+			.add-info {
+				display: inline-block;
+				cursor: pointer;
+			}
+
+			.panel-intro-icon {
+				display: inline-block;
+				width: 45px;
+				height: 45px;
+				background-color: #2F80ED;
+				margin: 70px auto 15px auto;
+				border-radius: 50%;
+				position: relative;
+				border:none;
+				padding: 0;
+
+				&.recording-icon {
+					background-color: #ED2F36;
+				}
+
+				i {
+					color: #FFF;
+					line-height: 45px;
+					font-size: 33px;
+
+					&.rotated {
+						transform:rotate(-45deg);
+					}
+				}
+
+				
+
+				img {
+					position: absolute;
+					transform: translate(-11px, 10px);
+					width: 22px;
+				}
+
+				
+			}
+			.panel-intro-text {
+				font-size:0.875rem ;
+				color: #828282;
+				text-align: center;
+				display: block;
+				margin-bottom: 30px;
+			}
+
+			//audio
+			.time-display {
+				color: #828282;
+				font-size: 2.25rem;
+				line-height: 2.25rem;
+				display: block;
+
+			}
+
+			.delete-audio {
+				border:none;
+				background-color: #FFF;
+				color: #2F80ED;
+				font-size: 1.125rem;
+				margin-top: 10px;
+				display: inline-block;
+				cursor: pointer;
+			}
+
+			//attachment
+			.panel-list {
+				padding: 0;
+				list-style: none;
+				text-align: left;
+				margin: 0;
+				max-height: 83px;
+				overflow: auto;
+
+				li {
+					padding: 5px 25px 5px 0;
+					position: relative;
+					color: #828282;
+					font-size: 0.75rem;
+					word-break: break-all;
+
+					.delete-attachment {
+						position: absolute;
+						right: -3px;
+						top: 5px;
+						display: inline-block;
+						cursor: pointer;
+
+						i {
+							font-size: 1.125rem
+						}
+					}
+				}
+			}
+		}
+
+
+		
+
+
+
+	}
+
+}
+
+// MODAL ADD QUESTIONS
+.answer-input {
+	position: absolute;
+	right: -25px;
+	top: 22px;
+	@media (max-width: 768px) {
+		right: -10px;
+	}
+}
+
+.correct-label {
+	bottom: -10px;
+	color: #4F4F4F;
+	font-size: 1rem;
+	margin: 0;
+	position: relative;
+	right: 0px;
+	text-align: right;
+
+	@media (max-width: 768px) {
+		position: absolute;
+		font-size: 12px;
+		right: 15px;
+		bottom: -40px;
+	}
+}
+
+.explanation-content {
+	margin-top: 20px;
+}
+
+
+

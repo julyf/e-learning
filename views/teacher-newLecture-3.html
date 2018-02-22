@@ -1,0 +1,501 @@
+<!doctype html>
+<html>
+<head>
+   <title>New Lecture</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/styles.css">
+   <script src="../js/ng-file-upload-shim.js"></script>
+<script src="../js/ng-file-upload.js"></script>
+<script src="../js/upload.js"></script>
+</head>
+<body>
+<div class="wrapper new-lecture">
+   <div class="header">
+      <nav class="navbar">
+         <div class="inner-wrapper">
+            <div class="row">
+               <div class="col-xs-6 col-sm-6 col-md-3 navbar--logoBox">
+                  <a href="#">
+                     <span class="logo-content"><img src="../img/logo.svg" alt=""></span>
+                     <p>Teacher <span>Dashboard</span></p>
+                  </a>
+               </div>
+               <div class="col-xs-6 col-sm-6 col-md-3 col-sm-push-6 navbar--userBox">
+                  <p class="navbar--userBox-name">Nombre Apellido Nombre Apellido</p>
+                  <img class="navbar--userBox-img" src="http://via.placeholder.com/45x45" alt="">
+               </div>
+               <div class="col-12 col-sm-12 col-md-6 col-sm-pull-3 navbar--searchBox">
+                  <form>
+                     <div class="navbar--searchBox-content">
+                        <input type="text" class="nav-searchBox--input">
+                        <button type="submit" class="nav-searchBox--iconSearch"><i class="material-icons">search</i></button>
+                        <button type="reset" class="nav-searchBox--iconClose is--hide"><i class="material-icons">close</i></button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div> 
+      </nav>
+   </div>
+
+   <form action="" method="">
+      <div class="content new-lecture-form-content">
+         <div class="inner-wrapper">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-12  col-sm-12 col-md-12   is--center">
+                     <ul class="steps">
+                        <li class="steps--is-complete">
+                           <a href="#">
+                              <span class="steps-number ">1</span>
+                              <span class="steps-text">CREATE</span>
+                           </a>
+                        </li>
+                        <li class="steps--is-complete">
+                           <a href="#">
+                              <span class="steps-number">2</span>
+                              <span class="steps-text">UPLOAD</span>
+                           </a>
+                        </li>
+                        <li class="steps--is-active">
+                           <span class="steps-number">3</span>
+                           <span class="steps-text">REVIEW</span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-9 new-lecture--slideSection">
+                     <div class="new-lecture-iframe-content">
+                        <iframe src="" frameborder="0" class="new-lecture-iframe"></iframe>
+                        <button type="button" class="btn-rounded">EDIT</button>
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-3 new-lecture--linkSection">
+                     
+                     <div class="panel-group--linkSection" id="accordion" role="tablist" aria-multiselectable="true">
+                        
+                        <div class="box">
+                           <div class="panel-head" role="tab" id="headingOne">
+                              <h4 class="panel-title">
+                                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#audio" aria-expanded="true" aria-controls="audio">Audio <i class="material-icons">keyboard_arrow_up</i></a>
+                              </h4>
+                           </div>
+                           <div id="audio" class="panel-collapse collapse show1" role="tabpanel" aria-labelledby="headingOne">
+                              
+                              <div class="panel-body">
+                                 <button id="record" class="panel-intro-icon">
+                                    <i class="material-icons">mic</i>
+                                 </button>
+                                 <span class="panel-intro-text">Record your <br>slide audio</span>
+                              </div>
+                              <div class="panel-body">  
+                                 <button id="cancel"  class="panel-intro-icon recording-icon">
+                                    <i class="material-icons">stop</i>
+                                 </button>
+                                 <span id="recording" class="panel-intro-text">Recording audio</span>
+                                 <span id="time-display" class="time-display">00:00</span>
+                              </div>
+                              <div class="panel-body">
+                                 <button id="cancel"  class="panel-intro-icon">
+                                    <i class="material-icons">play_arrow</i>
+                                 </button>
+                                 <span class="panel-intro-text">Audio Recorded</span>
+                                 <span class="time-display">33:33</span>
+                                 <a class="delete-audio" data-toggle="modal" data-target="#delete-audio-modal"><i class="material-icons">delete</i></a>
+                              </div>
+
+                           </div>
+                        </div>
+
+                        <div class="box">
+                           <div class="panel-head" role="tab" id="headingTwo">
+                              <h4 class="panel-title">
+                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#attachments" aria-expanded="false" aria-controls="attachments">Attachments<i class="material-icons">keyboard_arrow_up</i></a>
+                              </h4>
+                           </div>
+                           <div id="attachments" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingTwo">
+                              <div class="panel-body">
+                                 <ul class="panel-list attachment-list">
+                                    <li>Filename.pdf <a class="delete-attachment" title="delete"><i class="material-icons">delete</i></a>
+                                    </li>
+                                    <li>Filename.pdf <a class="delete-attachment" title="delete"><i class="material-icons">delete</i></a>
+                                    </li>
+                                 </ul>
+                                 <a class="add-info" data-toggle="modal" data-target="#add-attachment-modal">
+                                    <span class="panel-intro-icon"><i class="material-icons rotated">link</i></span>
+                                    <span class="panel-intro-text">Include an attachment <br>next to the slide</span>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="box">
+                           <div class="panel-head" role="tab" id="headingThree">
+                              <h4 class="panel-title">
+                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#webLinks" aria-expanded="false" aria-controls="webLinks">Web Links<i class="material-icons">keyboard_arrow_up</i></a>
+                              </h4>
+                           </div>
+                           <div id="webLinks" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                              <div class="panel-body">
+                                 <ul class="panel-list webLink-list">
+                                    <li>Link Name <a class="delete-attachment" title="delete"><i class="material-icons">delete</i></a>
+                                    </li>
+                                    <li>Link Name <a class="delete-attachment" title="delete"><i class="material-icons">delete</i></a>
+                                    </li>
+                                 </ul>
+                                 <a class="add-info" data-toggle="modal" data-target="#add-link-modal">
+                                    <span class="panel-intro-icon"><i class="material-icons rotated">link</i></span>
+                                    <span class="panel-intro-text">Include a web link <br>next to the slide</span>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="box">
+                           <div class="panel-head" role="tab" id="headingFour">
+                              <h4 class="panel-title">
+                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#multipleChoice" aria-expanded="false" aria-controls="multipleChoice">Multiple Choice Questions<i class="material-icons">keyboard_arrow_up</i></a>
+                              </h4>
+                           </div>
+                           <div id="multipleChoice" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                              <div class="panel-body">
+                                 <ul class="panel-list multipleChoice-list">
+                                    <li>1. Optimally, at least how long should a uveitic  patient be stable without active inflammation prior  to performing cataract extraction?  <a class="delete-attachment" title="delete"><i class="material-icons">delete</i></a>
+                                    </li>
+                                    <li>1. Optimally, at least how long should a uveitic  patient be stable without active inflammation prior  to performing cataract extraction?  <a class="delete-attachment" title="delete"><i class="material-icons">delete</i></a>
+                                    </li>
+                                 </ul>
+                                 <a class="add-info" data-toggle="modal" data-target="#add-multipleChoice-modal">
+                                    <span class="panel-intro-icon"><img src="../img/multiple-choise-img.svg"></span>
+                                    <span class="panel-intro-text">Include a multiple choice question <br>related to the slide content</span>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     
+
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+
+
+         </div>
+      </div>
+      <div class="course-footer">
+         <button type="button" class="btn-rounded btn-back">CANCEL</button>
+         <button type="button" class="btn-rounded">SAVE DRAFT</button>
+         <button type="button" class="btn-rounded">PREVIEW</button>
+         <button type="button" class="btn-rounded btn-rounded-primary btn-next btn-block" data-toggle="modal" data-target="#issues-modal">SAVE AND PUBLISH</button>
+      </div>
+   </form>
+</div>       
+         
+
+
+
+<!-- DELETE AUDIO -->
+<div id="delete-audio-modal" class="modal fade" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p class="modal-text">Are you sure you want to delete the recorded audio?</p>
+      </div>
+      <div class="modal-footer">
+         <button type="button" class="btn-rounded">Yes</button>
+         <button type="button" class="btn-rounded" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- ADD ATTACHMENT-->
+<div id="add-attachment-modal" class="modal fade" tabindex="-1">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title">Add attachment</h5>
+         </div>
+         <div class="modal-body">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-12 col-sm-12 col-md-9 offset-md-2 is--center">
+                     <div class="up-buttons drag-zone">
+                     <div ngf-select ngf-drop ng-model="files" ngf-model-invalid="invalidFiles"
+                         ngf-model-options="modelOptionsObj"
+                         ngf-multiple="multiple" ngf-pattern="pattern" ngf-accept="acceptSelect"
+                         ng-disabled="disabled" ngf-capture="capture"
+                         ngf-drag-over-class="dragOverClassObj"
+                         ngf-validate="validateObj"
+                         ngf-resize="resizeObj"
+                         ngf-resize-if="resizeIfFn($file, $width, $height)"
+                         ngf-dimensions="dimensionsFn($file, $width, $height)"
+                         ngf-duration="durationFn($file, $duration)"
+                         ngf-keep="keepDistinct ? 'distinct' : keep"
+                         ngf-fix-orientation="orientation"
+                         ngf-max-files="maxFiles"
+                         ngf-ignore-invalid="ignoreInvalid"
+                         ngf-run-all-validations="runAllValidations"
+                         ngf-allow-dir="allowDir" class="drop-box" ngf-drop-available="dropAvailable">Drag and drop a presentation here
+                     </div>
+                  </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-12 col-sm-12 col-md-9 offset-md-2">
+                     <div class="file-input-content rounded-input">
+                        <input type="file" ngf-select="" ng-model="picFile" name="file" ngf-accept="'image/*'" required="" class="ng-pristine ng-invalid ng-invalid-required" accept="image/*">
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-12 col-sm-12 col-md-2">
+                     <label class="form-label">Name</label>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-9">
+                     <input type="text"  class="rounded-input">
+                  </div>
+               </div>
+               <div class="row">
+               <div class="col-12 col-sm-12 col-md-8 offset-md-2">
+
+
+                  <ul class="response">
+                     <li class="sel-file" ng-repeat="f in files">
+                        <div>
+                           <img ngf-thumbnail="!f.$error && f" class="thumb">
+                           <div class="progress-info">
+                              <span class="progress" ng-show="f.progress >= 0">
+                                 <div style="width:{{f.progress}}%">{{f.progress}}%</div>
+                              </span>
+                              <!--button class="button" ng-click="f.upload.abort();f.upload.aborted=true" 
+                                 ng-show="f.upload != null && f.progress < 100 && !f.upload.aborted">
+                                 Abort<span ng-show="isResumeSupported">/Pause</span>
+                              </button-->
+                              <button class="button" ng-click="upload(f, true);f.upload.aborted=false"
+                                 ng-show="isResumeSupported && f.upload != null && f.upload.aborted">Resume
+                              </button>
+                              <button class="button" ng-click="restart(f);f.upload.aborted=false"
+                                 ng-show="isResumeSupported && f.upload != null && (f.progress == 100 || f.upload.aborted)">Restart
+                              </button>
+                              <p class="file-info">{{f.name}}.{{f.type}} - Size: {{f.size}}B</p>
+                           </div>
+                        </div>
+                     </li>
+
+                     <li class="sel-file" ng-repeat="f in files">
+                        <div>
+                           <img ngf-thumbnail="!f.$error && f" class="thumb" src="../img/curso-img.png">
+                           <div class="progress-info">
+                              <span class="progress" ng-show="f.progress >= 0">
+                                 <div style="width:66%">66%</div>
+                              </span>
+                              <button class="button" ng-click="f.upload.abort();f.upload.aborted=true" 
+                                 ng-show="f.upload != null && f.progress < 100 && !f.upload.aborted">
+                                 Abort<span ng-show="isResumeSupported">/Pause</span>
+                              </button>
+                              <!--button class="button" ng-click="upload(f, true);f.upload.aborted=false"
+                                 ng-show="isResumeSupported && f.upload != null && f.upload.aborted">Resume
+                              </button>
+                              <button class="button" ng-click="restart(f);f.upload.aborted=false"
+                                 ng-show="isResumeSupported && f.upload != null && (f.progress == 100 || f.upload.aborted)">Restart
+                              </button-->
+                              <p class="file-info">presentation.jpg - Size: 99B</p>
+                           </div>
+                        </div>
+                        
+                     </li>
+                     <li class="sel-file" ng-repeat="f in invalidFiles">
+                        <div class="sel-file-error-msj">Invalid File: {{f.$errorMessages}} {{f.$errorParam}}, {{f.name}} - size: {{f.size}}B - type: {{f.type}}
+                        </div>
+                     </li>
+                  </ul>
+           
+               <div>
+            </div>
+            </div>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn-rounded" disabled="disabled">Confirm</button>
+            <button type="button" class="btn-rounded" data-dismiss="modal">Cancel</button>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+<!-- ADD WEB LINK-->
+<div id="add-link-modal" class="modal fade" tabindex="-1">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title">Add a weblink</h5>
+         </div>
+         <div class="modal-body">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-12 col-sm-12 col-md-2">
+                     <label class="form-label">Link</label>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-9">
+                     <input type="text"  class="rounded-input" placeholder="e.g. http://www.http://eyewiki.aao.org/Sustained_Release_Glaucoma">
+                     <p class="form-error-msj form-error-msj-bottom is--hide">Error aqui.</p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-12 col-sm-12 col-md-2">
+                     <label class="form-label has-error">Name</label>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-9">
+                     <input type="text"  class="rounded-input has-error" placeholder="e.g. Eye Wiki">
+                     <p class="form-error-msj form-error-msj-bottom">Error aqui.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn-rounded">Confirm</button>
+            <button type="button" class="btn-rounded" data-dismiss="modal">Cancel</button>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+<!-- ADD MULTIPLE CHOISE-->
+<div id="add-multipleChoice-modal" class="modal fade" tabindex="-1">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title">Add a multiple choice question for the content of this slide</h5>
+         </div>
+         <div class="modal-body">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-12 col-sm-12 col-md-2">
+                     <label class="form-label">Question</label>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-9">
+                    <textarea class="rounded-textarea" placeholder="Enter the question here"></textarea>
+                     <p class="form-error-msj form-error-msj-bottom is--hide">Error aqui.</p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12">
+                     <p class="correct-label">Correct</p>
+                  </div>
+                  <div class="col-11 col-sm-11 col-md-2">
+                     <label class="form-label">Answer#1</label>
+                  </div>
+                  <div class="col-11 col-sm-11 col-md-9">
+                     <input type="text"  class="rounded-input" placeholder="e.g. Eye Wiki">
+                     <p class="form-error-msj form-error-msj-bottom is--hide">Error aqui.</p>
+                     <input type="radio" name="answer" class="answer-input" checked="checked">
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-11 col-sm-11 col-md-2">
+                     <label class="form-label has-error">Answer#2</label>
+                  </div>
+                  <div class="col-11 col-sm-11 col-md-9">
+                     <input type="text"  class="rounded-input has-error" placeholder="e.g. Eye Wiki">
+                     <p class="form-error-msj form-error-msj-bottom">Error aqui.</p>
+                     <input type="radio" name="answer" class="answer-input">
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-11 col-sm-11 col-md-2">
+                     <label class="form-label">Answer#3</label>
+                  </div>
+                  <div class="col-11 col-sm-11 col-md-9">
+                     <input type="text"  class="rounded-input" placeholder="e.g. Eye Wiki">
+                     <p class="form-error-msj form-error-msj-bottom is--hide">Error aqui.</p>
+                     <input type="radio" name="answer" class="answer-input">
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-11 col-sm-11 col-md-2">
+                     <label class="form-label">Answer#4</label>
+                  </div>
+                  <div class="col-11 col-sm-11 col-md-9">
+                     <input type="text"  class="rounded-input" placeholder="e.g. Eye Wiki">
+                     <p class="form-error-msj form-error-msj-bottom is--hide">Error aqui.</p>
+                     <input type="radio" name="answer" class="answer-input">
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-11 col-sm-11 col-md-2">
+                     <label class="form-label">Answer#5</label>
+                  </div>
+                  <div class="col-11 col-sm-11 col-md-9">
+                     <input type="text"  class="rounded-input" placeholder="e.g. Eye Wiki">
+                     <p class="form-error-msj form-error-msj-bottom is--hide">Error aqui.</p>
+                     <input type="radio" name="answer" class="answer-input">
+                  </div>
+               </div>            
+               <div class="row explanation-content">
+                  <div class="col-12 col-sm-12 col-md-2">
+                     <label class="form-label">Explanation</label>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-9">
+                    <textarea class="rounded-textarea" placeholder="Provide an explanation for the correct answer"></textarea>
+                     <p class="form-error-msj form-error-msj-bottom is--hide">Error aqui.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn-rounded">Save</button>
+            <button type="button" class="btn-rounded" data-dismiss="modal">Discard</button>
+         </div>
+      </div>
+   </div>
+</div>
+
+<!-- ISSUES MODAL-->
+<div id="issues-modal" class="modal fade" tabindex="-1">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title">Please address the following issues</h5>
+         </div>
+         <div class="modal-body">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 is--center">
+                     <ol class="issues-list">
+                        <li>Slide <a href="#">3</a>, <a href="#">4</a> and <a href="#">7</a> don't have an audio recorded. All Slides must have an audio recorded.</li>
+                        <li>The lecture should have at least 3 multiple choice questions.</li>
+                     </ol>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn-rounded" data-dismiss="modal">Ok</button>
+         </div>
+      </div>
+   </div>
+</div>
+   
+
+
+
+
+<!-- Optional JavaScript --> 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</body>
+</html>

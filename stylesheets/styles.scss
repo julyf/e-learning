@@ -1,5 +1,5 @@
 
-@import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+//@import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "partials/base";
 @import "partials/header";
 @import "partials/filtros";
@@ -13,5 +13,11 @@
 @import "partials/student-lecture-result";
 @import "partials/_asPieProgress.min";
 
+
+@import "partials/_teacher-list";
+@import "partials/_teacher-newLecture-form";
+@import "partials/_teacher-dashboard-analytics";
+@import "partials/_upload";
+@import "partials/_modals";
 
 //gulp sass:watch
