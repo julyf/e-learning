@@ -17,6 +17,7 @@
 
    .btn-rounded {
       margin-right: 10px;
+
       @media all and (max-width: 767px) {
          margin: 5px 0;
       }
@@ -24,7 +25,6 @@
 
    .btn-back {
       float: left;
-      background-color: transparent;
       margin-right: 0px;
       @media all and (max-width: 767px) {
          font-size: 13px

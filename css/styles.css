@@ -5,7 +5,8 @@ body, html {
   -webkit-text-size-adjust: 100%;
   padding: 0;
   margin: 0;
-  height: 100%; }
+  height: 100%;
+  overflow-x: hidden; }
 
 @media (min-width: 0px) {
   body, html {
@@ -32,11 +33,6 @@ body, html {
 @media (min-width: 1200px) {
   body, html {
     font-size: 16px; } }
-
-.col-xs-12 {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px; }
 
 a {
   color: #2F80ED; }
@@ -65,7 +61,8 @@ a {
   padding: 0 20px;
   display: inline-block;
   color: #2F80ED;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: transparent; }
   .btn-rounded:hover {
     text-decoration: none; }
   @media (max-width: 768px) {
@@ -856,7 +853,6 @@ input.switch:checked + label {
         margin: 5px 0; } }
   .course-footer .btn-back {
     float: left;
-    background-color: transparent;
     margin-right: 0px; }
     @media all and (max-width: 767px) {
       .course-footer .btn-back {
@@ -1274,6 +1270,8 @@ input.switch:checked + label {
       .lecture-result .question-box .question-content {
         margin-left: 0px;
         margin-right: 0; } }
+    .lecture-result .question-box .question-content.show {
+      display: flex; }
   .lecture-result .question-box .test-question-info {
     margin-bottom: 5px;
     background-color: rgba(145, 185, 239, 0.2);
@@ -1369,59 +1367,15 @@ input.switch:checked + label {
       font-size: 1.75rem;
       font-weight: 400;
       margin-bottom: 10px; }
+      @media all and (max-width: 767px) {
+        .lecture-result .score-box-content .score-text h6 {
+          margin-top: 15px; } }
     .lecture-result .score-box-content .score-text p {
       font-size: 1rem;
       color: #828282;
       line-height: 1.75rem;
       margin: 0; }
 
-/**
-* jQuery asPieProgress v0.4.7
-* https://github.com/amazingSurge/jquery-asPieProgress
-*
-* Copyright (c) amazingSurge
-* Released under the LGPL-3.0 license
-*/
-.pie_progress {
-  position: relative;
-  text-align: center;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d; }
-
-.pie_progress__svg {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  padding-bottom: 100%;
-  overflow: hidden;
-  vertical-align: middle; }
-
-.pie_progress__svg svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto; }
-
-.pie_progress__content, .pie_progress__icon, .pie_progress__label, .pie_progress__number {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
-
-.pie_progress__number {
-  font-size: 42px; }
-
-.pie_progress__label {
-  margin-top: 32px;
-  font-size: 12px; }
-
-/*# sourceMappingURL=asPieProgress.min.css.map */
 .teacher-list .filter-section h3 {
   display: none; }
   @media (max-width: 767px) {
@@ -1608,12 +1562,17 @@ input.switch:checked + label {
       display: inline-block;
       cursor: pointer; }
     .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-list {
-      padding: 0;
-      list-style: none;
-      text-align: left;
-      margin: 0;
       max-height: 83px;
-      overflow: auto; }
+      overflow-x: hidden;
+      overflow-y: auto; }
+      @media (max-width: 768px) {
+        .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-list {
+          max-height: none; } }
+      .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-list ul {
+        padding: 0;
+        list-style: none;
+        text-align: left;
+        margin: 0; }
       .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-list li {
         padding: 5px 25px 5px 0;
         position: relative;
@@ -1622,10 +1581,11 @@ input.switch:checked + label {
         word-break: break-all; }
         .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-list li .delete-attachment {
           position: absolute;
-          right: -3px;
+          right: 2px;
           top: 5px;
           display: inline-block;
-          cursor: pointer; }
+          cursor: pointer;
+          height: 20px; }
           .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-list li .delete-attachment i {
             font-size: 1.125rem; }
 

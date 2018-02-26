@@ -213,6 +213,10 @@
 			 	margin-left: 0px;
 			 	margin-right: 0;
 			}
+
+			&.show {
+				display: flex;
+			}
 		}
 
 
@@ -352,6 +356,9 @@
 				font-size: 1.75rem;
 				font-weight: 400;
 				margin-bottom: 10px;
+				@media all and (max-width: 767px) {
+					margin-top: 15px;
+				}
 			}
 			p {
 				font-size: 1rem;

@@ -6,6 +6,7 @@ body, html {
    padding: 0;
    margin: 0;
    height: 100%; 
+   overflow-x: hidden; 
 }
 //Extra small viewport or screen
 @media (min-width: 0px) { 
@@ -45,12 +46,6 @@ body, html {
 }
 
 
-.col-xs-12 {
-   width: 100%;
-   padding-left: 15px;
-   padding-right: 15px;
-}
-
 a {
    color: #2F80ED;
    &:hover {
@@ -84,6 +79,7 @@ a {
    display: inline-block;
    color: #2F80ED;
    cursor: pointer;
+   background-color: transparent;
    &:hover {
       text-decoration: none;
    }
