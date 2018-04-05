@@ -101,42 +101,54 @@
 
             <div class="row lecture-slide-footer">
       			<div class="col-12 col-sm-12 col-md-9 lecture-slide--slideSection-footer">
-      				                      <div id="jquery_jplayer_1" class="jp-jplayer"></div>
-                      <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+      				  
+                <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                      <div id="jp_container_1" class="jp-audio " role="application" aria-label="media player">
                         <div class="jp-type-single">
                           <div class="jp-gui jp-interface">
-                            <div class="jp-controls">
+                            <div class="jp-controls player-div">
                               <button class="jp-play" role="button" tabindex="0">play</button>
                               <button class="jp-stop" role="button" tabindex="0">stop</button>
                             </div>
-                            <div class="jp-progress">
+                            <div class="player-div">
+                              <input type="button" id="jplayer_rewind" name="jplayer_rewind" value="-15 sec" class="jplayer_rewind">
+                              <input type="button" id="jplayer_forward" name="jplayer_forward" value="+15 sec" class="jplayer_forward">
+                              
+                            </div>
+                            <div class="jp-progress player-div">
                               <div class="jp-seek-bar">
                                 <div class="jp-play-bar"></div>
                               </div>
                             </div>
-                            <div class="jp-volume-controls">
-                              <button class="jp-mute" role="button" tabindex="0">mute</button>
-                              <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
-                              <div class="jp-volume-bar" style="position:relative">
-
-                                <div class="jp-volume-bar-value" style="position:absolute;bottom:0"></div>
+                            
+                            <div class="player-div">
+                              <div class="jp-volume-controls">
+                                <button class="jp-mute" role="button" tabindex="0">mute</button>
+                                <div class="jp-volume-bar" >
+                                  <div class="jp-volume-bar-value"></div>
+                                </div>
+                                <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
                               </div>
                             </div>
-                            <div id="jpSpeedControl" title="Speed" style="cursor:pointer;" onclick="jpSpeedControl();">1x</div>
-                            <div>
-                              <input type="checkbox" id="jplayer_autoplay" name="jplayer_autoplay" value="jplayer_autoplay"> Autoplay
+                            <div class="player-div" >
+                              <div id="jpSpeedControl" title="Speed" class="jpSpeedControl" onclick="jpSpeedControl();">1x</div>
                             </div>
-                            <div>
-                              <input type="button" id="jplayer_forward" name="jplayer_forward" value="Forward">
-                              <input type="button" id="jplayer_rewind" name="jplayer_rewind" value="Rewind">
+                           
+                            <div class="player-div player-switch">
+                              <span>Autoplay</span>
+                              <div class="switch-content">
+                                <input type="checkbox" id="jplayer_autoplay" name="jplayer_autoplay" value="jplayer_autoplay" class="jplayer_autoplay"><label for="jplayer_autoplay">Autoplay</label>
+                              </div>
                             </div>
+                            
                           </div>
                           <div class="jp-no-solution">
                             <span>Update Required</span>
                             To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
                           </div>
                         </div>
-                      </div>
+                        </div>
+                      
       			</div>
       			<div class="col-12 col-sm-12 col-md-3 lecture-slide--linkSection-footer">
       				<button type="button" class="btn-transparent btn-prev">PREV</button>
