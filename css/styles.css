@@ -942,8 +942,6 @@ input.switch:checked + label {
         left: 50%;
         line-height: 11.45vw;
         margin-left: -5.7vw;
-        max-height: 143px;
-        max-width: 143px;
         position: absolute;
         top: 50%;
         vertical-align: middle;
@@ -1052,6 +1050,54 @@ input.switch:checked + label {
       padding: 0 10px; }
     .lecture-slide .lecture-slide-footer .lecture-slide--linkSection-footer .btn-rounded-primary {
       float: right; }
+
+.player-switch span {
+  color: #828282;
+  font-size: 0.75rem;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 5px;
+  line-height: 33px; }
+
+.switch-content {
+  display: inline-block;
+  vertical-align: middle; }
+
+.player-switch input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  position: absolute; }
+
+.player-switch label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 34px;
+  height: 14px;
+  background-color: #E0E0E0;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  margin: 0; }
+  .player-switch label:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #CCC;
+    border-radius: 90px;
+    transition: 0.1s;
+    transform: translateY(-50%); }
+
+.player-switch input:checked + label {
+  background: rgba(47, 128, 237, 0.5); }
+
+.player-switch input:checked + label:after {
+  left: calc(100% - 20px);
+  transform: translate(-100% -50%);
+  background: #2F80ED; }
 
 @keyframes spin {
   from {
