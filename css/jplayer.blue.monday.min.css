@@ -83,7 +83,7 @@ border:0
     top: -8px
 }
 .jp-interface .jp-controls {
-    
+
     padding: 0;
     overflow: hidden
 }
@@ -126,7 +126,7 @@ border:0
 .player-div {
 	display: inline-block;
 	vertical-align: middle;
-	margin-right: 2%; 
+	margin-right: 2%;
 }
 
 .player-div:last-child {
@@ -246,7 +246,7 @@ border:0
     cursor: pointer;
     top: 50%;
     transform: translateY(-50%);
-    
+
 }
 .jp-mute, .jp-volume-max {
     width: 18px;
@@ -555,12 +555,12 @@ span.jp-artist {
     line-height: 33px;
 }
 .jplayer_rewind {
-    background: url(../img/jplayer_rewind.svg) no-repeat right center;
-    
+    background: url(../img/jqueryplayer/jplayer_rewind.svg) no-repeat right center;
+
 }
 
 .jplayer_forward {
-    background: url(../img/jplayer_forward.svg) no-repeat right center; 
+    background: url(../img/jqueryplayer/jplayer_forward.svg) no-repeat right center;
     margin-left: 15px;
 }
 
@@ -577,7 +577,7 @@ span.jp-artist {
 }
 
 @media (max-width: 767px) {
-    .jp-interface {   
+    .jp-interface {
         display: block;
         text-align: center;
     }
