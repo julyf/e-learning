@@ -8,6 +8,10 @@
       font-weight: bold;
       line-height: 1.1875rem;
       margin-top:10px;
+
+      &.filterBox--separated-title {
+         margin-top: 60px;
+      }
    }
 
    .hide-filters-mobile-btn {
@@ -118,7 +122,16 @@
 
 
 
+.filters-actions {
+   text-align: right;
+   padding:5px 0 5px 0;
 
+   a {
+      display: inline-block;
+      margin-left: 5%;
+      font-size: 0.9375rem;
+   }
+}
 
 
  @media (max-width: 767px) {

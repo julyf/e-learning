@@ -72,6 +72,9 @@ a {
     cursor: default;
     opacity: 0.25; }
 
+.btn-rounded-flat {
+  line-height: 30px; }
+
 .btn-rounded-primary {
   background-color: #2F80ED;
   color: #FFF; }
@@ -311,7 +314,8 @@ input.switch:checked + label {
       padding: 15px 10px; } }
   .header .navbar .navbar--logoBox a {
     display: block;
-    margin-right: 20px; }
+    margin-right: 20px;
+    white-space: nowrap; }
     @media (max-width: 768px) {
       .header .navbar .navbar--logoBox a {
         margin-right: 0px; } }
@@ -415,7 +419,8 @@ input.switch:checked + label {
   -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   @media (max-width: 767px) {
     .top-bar {
       padding: 10px; } }
@@ -453,14 +458,17 @@ input.switch:checked + label {
       padding-top: 10px;
       border-top: 1px solid #CCC;
       display: block;
-      clear: both; } }
+      clear: both; }
+      .top-bar .filter--courseType .btn-group {
+        flex-wrap: wrap; } }
   .top-bar .btn-group > .btn {
     color: #2F80ED;
     margin: 0 5px;
     border: 1px solid transparent;
     border-radius: 20px;
     line-height: 2.375rem;
-    padding: 0 15px; }
+    padding: 0 15px;
+    cursor: pointer; }
     @media (max-width: 576px) {
       .top-bar .btn-group > .btn {
         padding: 0 10px;
@@ -496,6 +504,8 @@ input.switch:checked + label {
   font-weight: bold;
   line-height: 1.1875rem;
   margin-top: 10px; }
+  .filter-section h3.filterBox--separated-title {
+    margin-top: 60px; }
 
 .filter-section .hide-filters-mobile-btn {
   display: none; }
@@ -562,6 +572,14 @@ input.switch:checked + label {
     .filter-section .filterBox.filterBox--white ul li:hover,
     .filter-section .filterBox.filterBox--white ul li a:hover {
       background-color: #F9F9F9; }
+
+.filters-actions {
+  text-align: right;
+  padding: 5px 0 5px 0; }
+  .filters-actions a {
+    display: inline-block;
+    margin-left: 5%;
+    font-size: 0.9375rem; }
 
 @media (max-width: 767px) {
   .show-filters-mobile-btn {
@@ -845,7 +863,9 @@ input.switch:checked + label {
   border-top: none;
   padding: 15px;
   background-color: #F8F8F8;
-  text-align: right; }
+  text-align: right;
+  overflow: auto;
+  margin-top: 60px; }
   .course-footer .btn-rounded {
     margin-right: 10px; }
     @media all and (max-width: 767px) {
@@ -1154,6 +1174,9 @@ input.switch:checked + label {
     .feedback-section textarea {
       width: 100%; } }
 
+.feedback-page .course-footer {
+  margin-top: 0; }
+
 .lecture-result .grey-box {
   margin-bottom: 40px; }
 
@@ -1172,36 +1195,6 @@ input.switch:checked + label {
     max-width: 100%;
     margin: 0 auto;
     border-radius: 20px; }
-
-.lecture-result .order-row {
-  margin-left: 0;
-  margin-right: 0;
-  white-space: nowrap; }
-  .lecture-result .order-row label {
-    line-height: 50px; }
-  @media (max-width: 767px) {
-    .lecture-result .order-row [class^="col-"] {
-      padding: 0; }
-      .lecture-result .order-row [class^="col-"]:last-child {
-        text-align: right; } }
-
-.lecture-result .btns-arrow-up-down {
-  display: inline-block;
-  width: 20px;
-  vertical-align: middle; }
-  .lecture-result .btns-arrow-up-down button {
-    margin: 0;
-    border: 0;
-    width: 20px;
-    height: auto;
-    float: left;
-    padding: 0;
-    background-color: #FFF; }
-    .lecture-result .btns-arrow-up-down button .material-icons {
-      font-size: 16px;
-      line-height: 10px;
-      color: #BDBDBD;
-      float: left; }
 
 .lecture-result .test-question {
   position: relative;
@@ -1375,52 +1368,83 @@ input.switch:checked + label {
   .lecture-result .question-box .response-error {
     background-color: rgba(235, 87, 87, 0.2); }
 
-.lecture-result .score-box-content {
+.score-box-content {
   margin-top: 30px;
   margin-bottom: 10%;
   background-color: #FAF9F9; }
-  .lecture-result .score-box-content .question-content {
+  .score-box-content .question-content {
     margin-left: -15px; }
-  .lecture-result .score-box-content .score-box {
-    padding: 15px 25px 0 25px; }
-  .lecture-result .score-box-content .score-progress-bar {
+  .score-box-content .score-box {
+    padding: 15px 25px; }
+  .score-box-content .score-progress-bar {
     display: inline-block;
     vertical-align: middle;
     width: 160px;
     text-align: center; }
     @media all and (max-width: 767px) {
-      .lecture-result .score-box-content .score-progress-bar {
+      .score-box-content .score-progress-bar {
         width: 100%; } }
-    .lecture-result .score-box-content .score-progress-bar .pie_progress {
+    .score-box-content .score-progress-bar .pie_progress {
       width: 160px;
       height: 160px;
       margin: 0 auto; }
-      .lecture-result .score-box-content .score-progress-bar .pie_progress .pie_progress__number {
+      .score-box-content .score-progress-bar .pie_progress .pie_progress__number {
         font-size: 30px;
         color: #6FCF97;
         font-weight: 400; }
-  .lecture-result .score-box-content .score-text {
+  .score-box-content .score-text {
     width: calc(100% - 165px);
     display: inline-block;
     vertical-align: middle;
     padding: 0 0 0 15px; }
     @media all and (max-width: 767px) {
-      .lecture-result .score-box-content .score-text {
+      .score-box-content .score-text {
         width: 100%;
         text-align: center;
         margin-bottom: 20px; } }
-    .lecture-result .score-box-content .score-text h6 {
+    .score-box-content .score-text h6 {
       font-size: 1.75rem;
       font-weight: 400;
       margin-bottom: 10px; }
       @media all and (max-width: 767px) {
-        .lecture-result .score-box-content .score-text h6 {
+        .score-box-content .score-text h6 {
           margin-top: 15px; } }
-    .lecture-result .score-box-content .score-text p {
+    .score-box-content .score-text p {
       font-size: 1rem;
       color: #828282;
       line-height: 1.75rem;
       margin: 0; }
+
+.order-row {
+  margin-left: 0;
+  margin-right: 0;
+  white-space: nowrap; }
+  .order-row label {
+    line-height: 50px;
+    margin-bottom: 0; }
+  @media (max-width: 767px) {
+    .order-row [class^="col-"] {
+      padding: 0; }
+      .order-row [class^="col-"]:last-child {
+        text-align: right; } }
+
+.btns-arrow-up-down {
+  display: inline-block;
+  width: 20px;
+  vertical-align: middle; }
+  .btns-arrow-up-down button {
+    margin: 0;
+    border: 0;
+    width: 20px;
+    height: auto;
+    float: left;
+    padding: 0;
+    background-color: #FFF; }
+    .btns-arrow-up-down button .material-icons {
+      font-size: 16px;
+      line-height: 10px;
+      color: #BDBDBD;
+      float: left; }
 
 .teacher-list .filter-section h3 {
   display: none; }
@@ -1483,157 +1507,188 @@ input.switch:checked + label {
   padding-bottom: 55px; }
   .new-lecture .new-lecture-form-content .inner-wrapper {
     max-width: 90%; }
-  .new-lecture .new-lecture-form-content .title-image-label {
-    margin: 40px 0 10px 0; }
-  .new-lecture .new-lecture-form-content .default-img {
-    border-radius: 20px;
-    vertical-align: middle;
-    margin: 10px 0; }
-  .new-lecture .new-lecture-form-content .input-file-content {
-    display: inline-block;
-    vertical-align: middle;
+
+.new-lecture .title-image-label {
+  margin: 40px 0 10px 0; }
+
+.new-lecture .default-img {
+  border-radius: 20px;
+  vertical-align: middle;
+  margin: 10px 0; }
+
+.new-lecture .input-file-content {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 140px; }
+
+.new-lecture .file-hidden {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer; }
+
+.new-lecture .new-lecture--slide-content {
+  border: 2px solid #2F80ED; }
+
+.new-lecture .new-lecture--slideSection {
+  padding-left: 0;
+  padding-right: 0; }
+  .new-lecture .new-lecture--slideSection .new-lecture-iframe-content {
     position: relative;
-    width: 140px; }
-  .new-lecture .new-lecture-form-content .file-hidden {
-    width: 100%;
+    overflow: hidden;
+    text-align: center;
     height: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    opacity: 0;
-    cursor: pointer; }
-  .new-lecture .new-lecture-form-content .new-lecture--slideSection {
-    padding-left: 0;
-    padding-right: 0;
-    max-height: 493px; }
-    .new-lecture .new-lecture-form-content .new-lecture--slideSection .new-lecture-iframe-content {
-      position: relative; }
-      @media (max-width: 992px) {
-        .new-lecture .new-lecture-form-content .new-lecture--slideSection .new-lecture-iframe-content {
-          height: 0;
-          padding-bottom: 60%; } }
-    .new-lecture .new-lecture-form-content .new-lecture--slideSection .new-lecture-iframe {
-      width: 100%;
-      height: 493px; }
-      @media (max-width: 992px) {
-        .new-lecture .new-lecture-form-content .new-lecture--slideSection .new-lecture-iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          max-height: 493px;
-          height: 100%; } }
-    .new-lecture .new-lecture-form-content .new-lecture--slideSection .btn-rounded {
-      position: absolute;
-      bottom: 20px;
-      right: 20px;
-      background-color: #FFF; }
-  .new-lecture .new-lecture-form-content .new-lecture--linkSection {
-    padding-left: 0;
-    padding-right: 0; }
-    .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-group--linkSection {
-      border-top: 1px solid #2F80ED;
-      height: 100%; }
-    .new-lecture .new-lecture-form-content .new-lecture--linkSection .box {
-      border: 1px solid #2F80ED;
-      border-top: none; }
-    .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-head .panel-title {
-      margin: 0; }
-    .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-head a {
-      padding: 15px 40px 15px 15px;
-      display: block;
-      color: #2F80ED;
-      font-size: 1rem;
-      position: relative;
-      text-decoration: none; }
-      .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-head a:hover {
-        text-decoration: none; }
-      .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-head a .material-icons {
-        position: absolute;
-        right: 8px;
-        top: 50%;
-        transform: translateY(-50%) rotate(0deg);
-        transition: all 0.5s; }
-      .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-head a.collapsed .material-icons {
-        transform: translateY(-50%) rotate(180deg); }
-    .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-collapse .panel-body {
-      text-align: center;
-      min-height: 292px;
-      overflow-x: auto;
-      padding: 0 15px; }
-    .new-lecture .new-lecture-form-content .new-lecture--linkSection .add-info {
-      display: inline-block;
-      cursor: pointer; }
-    .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-intro-icon {
-      display: inline-block;
-      width: 45px;
-      height: 45px;
-      background-color: #2F80ED;
-      margin: 70px auto 15px auto;
-      border-radius: 50%;
-      position: relative;
-      border: none;
-      padding: 0; }
-      .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-intro-icon.recording-icon {
-        background-color: #ED2F36; }
-      .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-intro-icon i {
-        color: #FFF;
-        line-height: 45px;
-        font-size: 33px; }
-        .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-intro-icon i.rotated {
-          transform: rotate(-45deg); }
-      .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-intro-icon img {
-        position: absolute;
-        transform: translate(-11px, 10px);
-        width: 22px; }
-    .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-intro-text {
-      font-size: 0.875rem;
-      color: #828282;
-      text-align: center;
-      display: block;
-      margin-bottom: 30px; }
-    .new-lecture .new-lecture-form-content .new-lecture--linkSection .time-display {
-      color: #828282;
-      font-size: 2.25rem;
-      line-height: 2.25rem;
+    width: 100%;
+    background-color: red;
+    background-size: cover;
+    background-position: center; }
+    @media (max-width: 992px) {
+      .new-lecture .new-lecture--slideSection .new-lecture-iframe-content {
+        height: 0;
+        padding-bottom: 60%;
+        border-bottom: 2px solid #2F80ED; } }
+    .new-lecture .new-lecture--slideSection .new-lecture-iframe-content .new-lecture-iframe-img {
+      margin: 0 auto;
+      height: 100%;
       display: block; }
-    .new-lecture .new-lecture-form-content .new-lecture--linkSection .delete-audio {
-      border: none;
-      background-color: #FFF;
-      color: #2F80ED;
-      font-size: 1.125rem;
-      margin-top: 10px;
-      display: inline-block;
-      cursor: pointer; }
-    .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-list {
-      max-height: 83px;
-      overflow-x: hidden;
-      overflow-y: auto; }
-      @media (max-width: 768px) {
-        .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-list {
-          max-height: none; } }
-      .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-list ul {
-        padding: 0;
-        list-style: none;
-        text-align: left;
-        margin: 0; }
-      .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-list li {
-        padding: 5px 25px 5px 0;
-        position: relative;
-        color: #828282;
-        font-size: 0.75rem;
-        word-break: break-all; }
-        .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-list li .delete-attachment {
-          position: absolute;
-          right: 2px;
-          top: 5px;
-          display: inline-block;
-          cursor: pointer;
-          height: 20px; }
-          .new-lecture .new-lecture-form-content .new-lecture--linkSection .panel-list li .delete-attachment i {
-            font-size: 1.125rem; }
+  .new-lecture .new-lecture--slideSection .new-lecture-iframe {
+    width: 100%;
+    height: 493px; }
+    @media (max-width: 992px) {
+      .new-lecture .new-lecture--slideSection .new-lecture-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-height: 493px;
+        height: 100%; } }
+  .new-lecture .new-lecture--slideSection .btn-rounded {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FFF; }
+
+.new-lecture .new-lecture--linkSection {
+  padding-left: 0;
+  padding-right: 0;
+  height: 100%;
+  border-left: 4px solid #2F80ED; }
+  @media (max-width: 992px) {
+    .new-lecture .new-lecture--linkSection {
+      border-left: 0; } }
+  .new-lecture .new-lecture--linkSection .panel-group--linkSection {
+    height: 100%; }
+  .new-lecture .new-lecture--linkSection .box {
+    border-bottom: 2px solid #2F80ED; }
+    .new-lecture .new-lecture--linkSection .box:last-child {
+      border-bottom: none; }
+  .new-lecture .new-lecture--linkSection .panel-head .panel-title {
+    margin: 0; }
+  .new-lecture .new-lecture--linkSection .panel-head a {
+    padding: 15px 40px 15px 15px;
+    display: block;
+    color: #2F80ED;
+    font-size: 1rem;
+    position: relative;
+    text-decoration: none; }
+    .new-lecture .new-lecture--linkSection .panel-head a:hover {
+      text-decoration: none; }
+    .new-lecture .new-lecture--linkSection .panel-head a .material-icons {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%) rotate(0deg);
+      transition: all 0.5s; }
+    .new-lecture .new-lecture--linkSection .panel-head a.collapsed .material-icons {
+      transform: translateY(-50%) rotate(180deg); }
+  .new-lecture .new-lecture--linkSection .panel-collapse .panel-body {
+    text-align: center;
+    min-height: 315px;
+    overflow-x: auto;
+    padding: 0 15px; }
+    @media (max-width: 992px) {
+      .new-lecture .new-lecture--linkSection .panel-collapse .panel-body {
+        min-height: 0; } }
+  .new-lecture .new-lecture--linkSection .add-info {
+    display: inline-block;
+    cursor: pointer; }
+  .new-lecture .new-lecture--linkSection .panel-intro-icon {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-color: #2F80ED;
+    margin: 70px auto 15px auto;
+    border-radius: 50%;
+    position: relative;
+    border: none;
+    padding: 0; }
+    @media (max-width: 992px) {
+      .new-lecture .new-lecture--linkSection .panel-intro-icon {
+        margin: 20px auto; } }
+    .new-lecture .new-lecture--linkSection .panel-intro-icon.recording-icon {
+      background-color: #ED2F36; }
+    .new-lecture .new-lecture--linkSection .panel-intro-icon i {
+      color: #FFF;
+      line-height: 45px;
+      font-size: 33px; }
+      .new-lecture .new-lecture--linkSection .panel-intro-icon i.rotated {
+        transform: rotate(-45deg); }
+    .new-lecture .new-lecture--linkSection .panel-intro-icon img {
+      position: absolute;
+      transform: translate(-11px, 10px);
+      width: 22px; }
+  .new-lecture .new-lecture--linkSection .panel-intro-text {
+    font-size: 0.875rem;
+    color: #828282;
+    text-align: center;
+    display: block;
+    margin-bottom: 30px; }
+  .new-lecture .new-lecture--linkSection .time-display {
+    color: #828282;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    display: block; }
+  .new-lecture .new-lecture--linkSection .delete-audio {
+    border: none;
+    background-color: #FFF;
+    color: #2F80ED;
+    font-size: 1.125rem;
+    margin-top: 10px;
+    display: inline-block;
+    cursor: pointer; }
+  .new-lecture .new-lecture--linkSection .panel-list {
+    max-height: 83px;
+    overflow-x: hidden;
+    overflow-y: auto; }
+    @media (max-width: 768px) {
+      .new-lecture .new-lecture--linkSection .panel-list {
+        max-height: none; } }
+    .new-lecture .new-lecture--linkSection .panel-list ul {
+      padding: 0;
+      list-style: none;
+      text-align: left;
+      margin: 0; }
+    .new-lecture .new-lecture--linkSection .panel-list li {
+      padding: 5px 25px 5px 0;
+      position: relative;
+      color: #828282;
+      font-size: 0.75rem;
+      word-break: break-all; }
+      .new-lecture .new-lecture--linkSection .panel-list li .delete-attachment {
+        position: absolute;
+        right: 2px;
+        top: 5px;
+        display: inline-block;
+        cursor: pointer;
+        height: 20px; }
+        .new-lecture .new-lecture--linkSection .panel-list li .delete-attachment i {
+          font-size: 1.125rem; }
 
 .answer-input {
   position: absolute;
@@ -1670,7 +1725,7 @@ input.switch:checked + label {
     max-width: 940px; }
 
 .analytic-dashboard-content {
-  padding: 90px 15px 40px 15px; }
+  padding: 90px 15px 0 15px; }
 
 .analytics-box {
   border-radius: 20px;
@@ -1917,7 +1972,7 @@ input.switch:checked + label {
   @media (max-width: 768px) {
     .modal-body {
       min-height: 0px;
-      padding: 10px 5px; } }
+      padding: 10px; } }
 
 .modal-header {
   border-bottom: none;
@@ -1950,6 +2005,17 @@ input.switch:checked + label {
   margin: 0;
   text-align: center; }
 
+.modal-text-secondary {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 10px 0 50px 0; }
+
+.modal-text-success {
+  color: #72D67C; }
+
+.modal-text-error {
+  color: #FF0000; }
+
 .issues-list {
   width: 85%;
   margin: 30px auto;
@@ -1961,3 +2027,122 @@ input.switch:checked + label {
     font-size: 0.875rem;
     text-align: left;
     margin: 5px 0; }
+
+.program-director-list .courseBox--rank {
+  color: #27AE60;
+  font-size: 0.875rem;
+  position: absolute;
+  right: 15px;
+  top: 10px; }
+
+.program-director-list .courseBox--name {
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  margin-bottom: 5px;
+  margin-top: 15px; }
+
+.program-director-list .courseBox--email {
+  color: #828282;
+  font-size: 0.875rem;
+  margin-bottom: 8px; }
+
+.new-student-form-content {
+  padding: 80px 0;
+  max-width: 90%;
+  margin: 0 auto; }
+
+.director--student-detail-content {
+  max-width: 970px;
+  margin: 0 auto; }
+  .director--student-detail-content .score-box-content {
+    margin: 0; }
+
+.table-tr {
+  background-color: #FAF9F9;
+  margin-bottom: 1px;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  .table-tr label {
+    margin-bottom: 0; }
+  .table-tr:hover {
+    background-color: #F4F4F4; }
+
+.td-date {
+  color: #828282;
+  font-size: 1rem; }
+
+.td-red {
+  color: #EB5757; }
+
+.td-green {
+  color: #27AE60; }
+
+.td-orange {
+  color: #F2994A; }
+
+.td-blue,
+.td-blue * {
+  color: #2F80ED; }
+
+.td-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%; }
+
+.section-title {
+  color: #333333;
+  font-size: 1.875rem;
+  margin: 4.375rem 0 1rem 0; }
+  .section-title a {
+    font-size: 1rem;
+    margin-left: 10px; }
+
+@media (max-width: 768px) {
+  .hide-in-mobile {
+    display: none; } }
+
+.box-user-detail-info {
+  padding: 50px 0 0 0; }
+  @media (max-width: 768px) {
+    .box-user-detail-info {
+      text-align: center; } }
+  .box-user-detail-info .box-user-detail-info-img-content {
+    display: inline-block;
+    margin-right: 38px;
+    vertical-align: top; }
+    @media (max-width: 768px) {
+      .box-user-detail-info .box-user-detail-info-img-content {
+        display: block;
+        margin: 0 auto 30px auto; } }
+    .box-user-detail-info .box-user-detail-info-img-content img {
+      max-width: 100%;
+      margin: 0 auto;
+      border-radius: 20px; }
+  .box-user-detail-info .box-user-detail-info-text-content {
+    display: inline-block;
+    vertical-align: top; }
+  .box-user-detail-info .box-user-detail-info--rank {
+    color: #27AE60;
+    font-size: 1rem;
+    margin-bottom: 5px; }
+  .box-user-detail-info .box-user-detail-info--name {
+    font-size: 1.875em;
+    color: #333333;
+    margin-bottom: 15px; }
+  .box-user-detail-info .box-user-detail-info--data {
+    color: #828282;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .box-user-detail-info .box-user-detail-info--data li {
+      line-height: 1.5625em; }
+  .box-user-detail-info .btn-rounded {
+    width: 163px;
+    margin: 5px 0;
+    float: right; }
+    @media (max-width: 768px) {
+      .box-user-detail-info .btn-rounded {
+        float: none;
+        margin: 20px 5px 0 5px;
+        width: auto; } }

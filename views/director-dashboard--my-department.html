@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+<head>
+   <title>Program Director Dashboard Student</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+   <div class="wrapper listado director-dashborad-student">
+      <div class="header">
+         <nav class="navbar">
+            <div class="inner-wrapper">
+               <div class="row">
+                  <div class="col-6 col-sm-6 col-md-3 navbar--logoBox">
+                     <a href="#">
+                        <span class="logo-content"><img src="../img/logo.svg" alt=""></span>
+                        <p>Program Director <span>Dashboard</span></p>
+                     </a>
+                  </div>
+                  <div class="col-6 col-sm-6 col-md-3 col-sm-push-6 navbar--userBox">
+                     <p class="navbar--userBox-name">Nombre Apellido Nombre Apellido</p>
+                     <img class="navbar--userBox-img" src="http://via.placeholder.com/45x45" alt="">
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-sm-pull-3 navbar--searchBox">
+                     <form>
+                        <div class="navbar--searchBox-content">
+                           <input type="text" class="nav-searchBox--input">
+                           <button type="submit" class="nav-searchBox--iconSearch"><i class="material-icons">search</i></button>
+                           <button type="reset" class="nav-searchBox--iconClose is--hide"><i class="material-icons">close</i></button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div> 
+         </nav>
+      </div>
+
+      <div class="top-bar filters-nav">
+         <div class="inner-wrapper">
+            <div class="dropdown filter--orderBy">
+               <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Order by Name </button>
+               <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button">Action</button>
+                  <button class="dropdown-item" type="button">Another action</button>
+                  <button class="dropdown-item" type="button">Something else here</button>
+               </div>
+            </div>
+            <div class="show-filters-mobile">
+               <a class="show-filters-mobile-btn"><i class="material-icons">filter_list</i> Filter</a>
+            </div>
+
+            <div class="filter--courseType">
+               <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-transparent ">                 
+                     <input type="radio" name="options" id="option1" > MY CURRICULUM 
+                  </label>
+                  <label class="btn btn-transparent">
+                     <input type="radio" name="options" id="option2" > PROGRESS REPORT
+                  </label>
+                  <label class="btn btn-transparent active">
+                     <input type="radio" name="options" id="option3" checked> MY DEPARTMENT
+                  </label>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="content">
+         <div class="inner-wrapper">
+            <div class="container-fluid">
+               <div class="row result-content">
+                  <div class="col-12 col-md-4 col-lg-3 result-content-filters ">
+
+                     <div class="filter-section">
+                        <h3><a class="hide-filters-mobile-btn"><i class="material-icons">arrow_back</i></a> Students</h3>
+                        <div class="filters-actions">
+                           <a href="#">Add New</a>
+                           <a href="" data-toggle="modal" data-target="#promote-all-modal">Promote All</a>
+                        </div>
+                        <div class="filterBox">
+                           <div class="filterBox--firstLevel">
+                              <a class="btn btn-transparent" href="#" >PGY 2 </a>
+                           </div>
+                           <div class="filterBox--firstLevel">
+                              <a class="btn btn-transparent" href="#" >PGY 3 </a>
+                           </div>
+                           <div class="filterBox--firstLevel">
+                              <a class="btn btn-transparent collapsed" data-toggle="collapse" href="#PGY4" aria-expanded="false" >PGY 4 <i class="material-icons">arrow_drop_down</i></a>
+                              <div class="collapse" id="PGY4">
+                                 <ul>
+                                    <li><a href="#">Uveitis</a></li>
+                                    <li><a href="#">Pseudoexfoliation</a></li>
+                                    <li><a href="#">Keratorefractive Patients</a></li>
+                                    <li><a href="#">Prior Retina Surgery</a></li>                         
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="filterBox--firstLevel">
+                              <a class="btn btn-transparent" href="#" >Alumni</a>
+                           </div>
+                        </div><!--filterBox-->
+                   
+                  
+                        <h3 class="filterBox--separated-title">Teachers</h3>
+                        <div class="filters-actions">
+                           <a href="#">Add New</a>
+                        </div>
+                        <div class="filterBox">
+                           <div class="filterBox--firstLevel">
+                              <a class="btn btn-transparent collapsed" data-toggle="collapse" href="#filter1-box" aria-expanded="false" >Lens Cataract <i class="material-icons">arrow_drop_down</i></a>
+                              <div class="collapse" id="filter1-box">
+                                 <div class="filterBox--secondLevel">
+                                    <a class="btn btn-transparent collapsed" data-toggle="collapse" href="#submenu-1" aria-expanded="false" >Surgical Management <i class="material-icons">arrow_drop_down</i></a>
+                                    <div class="collapse" id="submenu-1">
+                                       <ul>
+                                          <li class="is--selected"><a href="#">Uveitis</a></li>
+                                          <li><a href="#">Pseudoexfoliation</a></li>
+                                          <li><a href="#">Keratorefractive Patients</a></li>
+                                          <li><a href="#">Prior Retina Surgery</a></li>                         
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="filterBox--secondLevel">
+                                    <a class="btn btn-transparent collapsed" data-toggle="collapse" href="#submenu-2" aria-expanded="false" >Lens Anatomy <i class="material-icons">arrow_drop_down</i></a>
+                                    <div class="collapse" id="submenu-2">
+                                       <ul>
+                                          <li><a href="#">Uveitis</a></li>
+                                          <li><a href="#">Pseudoexfoliation</a></li>
+                                          <li><a href="#">Keratorefractive Patients</a></li>
+                                          <li><a href="#">Prior Retina Surgery</a></li>                         
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="filterBox--secondLevel">
+                                    <a class="btn btn-transparent collapsed" data-toggle="collapse" href="#submenu-3" aria-expanded="false" >Embryology of Lens <i class="material-icons">arrow_drop_down</i></a>
+                                    <div class="collapse" id="submenu-3">
+                                       <ul>
+                                          <li><a href="#">Uveitis</a></li>
+                                          <li><a href="#">Pseudoexfoliation</a></li>
+                                          <li><a href="#">Keratorefractive Patients</a></li>
+                                          <li><a href="#">Prior Retina Surgery</a></li>                         
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="filterBox--secondLevel">
+                                    <a class="btn btn-transparent collapsed" data-toggle="collapse" href="#submenu-4" aria-expanded="false" >Lens Dislocation Subluxation <i class="material-icons">arrow_drop_down</i></a>
+                                    <div class="collapse" id="submenu-4">
+                                       <ul>
+                                          <li><a href="#">Uveitis</a></li>
+                                          <li><a href="#">Pseudoexfoliation</a></li>
+                                          <li><a href="#">Keratorefractive Patients</a></li>
+                                          <li><a href="#">Prior Retina Surgery</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="filterBox--firstLevel">
+                                 <a class="btn btn-transparent collapsed" data-toggle="collapse" href="#Retina" aria-expanded="false" >Retina <i class="material-icons">arrow_drop_down</i></a>
+                                 <div class="collapse" id="Retina">
+                                    <ul>
+                                       <li><a href="#">Uveitis</a></li>
+                                       <li><a href="#">Pseudoexfoliation</a></li>
+                                       <li><a href="#">Keratorefractive Patients</a></li>
+                                       <li><a href="#">Prior Retina Surgery</a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="filterBox--firstLevel">
+                                 <a class="btn btn-transparent " data-toggle="collapse" href="#Glaucoma" aria-expanded="true" >Glaucoma <i class="material-icons">arrow_drop_down</i></a>
+                                 <div class="collapse show" id="Glaucoma">
+                                    <ul>
+                                       <li><a href="#">Uveitis</a></li>
+                                       <li><a href="#">Pseudoexfoliation</a></li>
+                                       <li><a href="#">Keratorefractive Patients</a></li>
+                                       <li><a href="#">Prior Retina Surgery</a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div><!--filterBox-->
+                     </div>
+                  </div>
+
+                  <div class="col-12 col-md-8 col-lg-9">
+                     <div class="course-list program-director-list">
+                        <div class="row">
+                           <div class="courseBox col-12 col-sm-6 col-md-6 col-lg-4 ">
+                              <span class="courseBox--rank">PGY 2</span>
+                              <div class="courseBox--logo"><img src="http://via.placeholder.com/100x35"  alt=""></div>
+                              <div class="courseBox--img"><img src="http://via.placeholder.com/300x200" alt=""></div>
+                              <div class="courseBox--name"><a href="#">Dr. John Liu</a></div>
+                              <div class="courseBox--email">email@montefiore.org</div>
+                           </div>
+                           <div class="courseBox col-12 col-sm-6 col-md-6 col-lg-4 ">
+                              <span class="courseBox--rank">Cornea/Refractive</span>
+                              <div class="courseBox--logo"><img src="http://via.placeholder.com/100x35"  alt=""></div>
+                              <div class="courseBox--img"><img src="http://via.placeholder.com/300x200" alt=""></div>
+                              <div class="courseBox--name"><a href="#">CDr. Martha Brown</a></div>
+                              <div class="courseBox--email">email@montefiore.org</div>
+                           </div>
+                           <div class="courseBox col-12 col-sm-6 col-md-6 col-lg-4 ">
+                              <span class="courseBox--rank">PGY 2</span>
+                              <div class="courseBox--logo"><img src="http://via.placeholder.com/100x35"  alt=""></div>
+                              <div class="courseBox--img"><img src="http://via.placeholder.com/300x200" alt=""></div>
+                              <div class="courseBox--name"><a href="#">Dr. John Liu</a></div>
+                              <div class="courseBox--email">email@montefiore.org</div>
+                           </div>
+                           <div class="courseBox col-12 col-sm-6 col-md-6 col-lg-4 ">
+                              <span class="courseBox--rank">PGY 2</span>
+                              <div class="courseBox--logo"><img src="http://via.placeholder.com/100x35"  alt=""></div>
+                              <div class="courseBox--img"><img src="http://via.placeholder.com/300x200" alt=""></div>
+                              <div class="courseBox--name"><a href="#">Dr. John Liu</a></div>
+                              <div class="courseBox--email">email@montefiore.org</div>
+                           </div>
+                           <div class="courseBox col-12 col-sm-6 col-md-6 col-lg-4 ">
+                              <span class="courseBox--rank">PGY 2</span>
+                              <div class="courseBox--logo"><img src="http://via.placeholder.com/100x35"  alt=""></div>
+                              <div class="courseBox--img"><img src="http://via.placeholder.com/300x200" alt=""></div>
+                              <div class="courseBox--name"><a href="#">Dr. John Liu</a></div>
+                              <div class="courseBox--email">email@montefiore.org</div>
+                           </div>
+                           <div class="courseBox col-12 col-sm-6 col-md-6 col-lg-4 ">
+                              <span class="courseBox--rank">Cornea/Refractive</span>
+                              <div class="courseBox--logo"><img src="http://via.placeholder.com/100x35"  alt=""></div>
+                              <div class="courseBox--img"><img src="http://via.placeholder.com/300x200" alt=""></div>
+                              <div class="courseBox--name"><a href="#">CDr. Martha Brown</a></div>
+                              <div class="courseBox--email">email@montefiore.org</div>
+                           </div>
+                        </div>
+
+                           
+                           
+                           
+
+                        <div class="is--loading">
+                           <div class="spinner"></div>
+                        <div>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+</div>
+
+
+<!-- PROMOTE ALL MODAL-->
+<div id="promote-all-modal" class="modal fade" tabindex="-1">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+         <div class="modal-body">
+           <p class="modal-text">Lorem ipsum dolor sit amet consectetur adipiscing?  </p>
+           <p class="modal-text-secondary">Leo neque vehicula duis tellus tincidunt suscipit potenti fringill.</p>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn-rounded">Yes</button>
+            <button type="button" class="btn-rounded" data-dismiss="modal">No</button>
+         </div>
+      </div>
+      <!-- mensaje de ok/error -->
+      <div class="modal-content" style="display: none">
+         <div class="modal-body">
+            <p class="modal-text modal-text-success">Success!</p>
+            <p class="modal-text modal-text-error">Ups!</p>
+            <p class="modal-text-secondary">Lorem ipsum dolor sit amet consectetur adipiscing elit augue.</p>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn-rounded" data-dismiss="modal">Close</button>
+         </div>
+      </div>
+  </div>
+</div>
+
+
+
+<!-- Optional JavaScript --> 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+
+<script>
+
+   $(".nav-searchBox--input").focus(function() {
+      $(".nav-searchBox--iconClose").removeClass("is--hide");
+      $(".nav-searchBox--iconSearch").addClass("is--hide");
+   }).blur(function() {
+      $(".nav-searchBox--iconClose").addClass("is--hide");
+      $(".nav-searchBox--iconSearch").removeClass("is--hide");
+      $(this).val("");
+   });
+
+   $(".show-filters-mobile-btn").click(function(){
+      $(".filter-section").addClass("filter-section--in");
+      $("body").css("overflow", "hidden");
+   });
+
+   $(".hide-filters-mobile-btn").click(function(){
+      $(".filter-section").removeClass("filter-section--in");
+      $("body").css("overflow", "auto");
+   });
+</script>
+
+
+
+</body>
+</html>
