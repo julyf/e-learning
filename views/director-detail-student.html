@@ -1,0 +1,398 @@
+<!doctype html>
+<html>
+<head>
+   <title>Program directod dashboard student detail</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/asPieProgress.min.css">
+   <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+<div class="wrapper">
+   <div class="header">
+      <nav class="navbar">
+         <div class="inner-wrapper">
+            <div class="row">
+               <div class="col-6 col-sm-6 col-md-3 navbar--logoBox">
+                  <a href="#">
+                     <span class="logo-content"><img src="../img/logo.svg" alt=""></span>
+                     <p>Program Director <span>Dashboard</span></p>
+                  </a>
+               </div>
+               <div class="col-6 col-sm-6 col-md-3 col-sm-push-6 navbar--userBox">
+                  <p class="navbar--userBox-name">Nombre Apellido Nombre Apellido</p>
+                  <img class="navbar--userBox-img" src="http://via.placeholder.com/45x45" alt="">
+               </div>
+               <div class="col-12 col-sm-12 col-md-6 col-sm-pull-3 navbar--searchBox">
+                  <form>
+                     <div class="navbar--searchBox-content">
+                        <input type="text" class="nav-searchBox--input">
+                        <button type="submit" class="nav-searchBox--iconSearch"><i class="material-icons">search</i></button>
+                        <button type="reset" class="nav-searchBox--iconClose is--hide"><i class="material-icons">close</i></button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div> 
+      </nav>
+   </div>
+
+   <div class="content director--student-detail-content">
+      <div class="director--student-detail--box">
+         <div class="inner-wrapper">
+            <div class="container-fluid">
+               <div class="row box-user-detail-info">
+                  <div class="col-12 col-md-9">
+
+                     <div class="box-user-detail-info-img-content">
+                        <img src="http://via.placeholder.com/262x175"  alt="">
+                     </div>
+                     <div class="box-user-detail-info-text-content">
+                        <h2 class="box-user-detail-info--rank">PGY 2</h2>
+                        <h1 class="box-user-detail-info--name">Dr. John Doe</h1>
+                        <ul class="box-user-detail-info--data">
+                           <li>Email: <a href="mailto:email@montefiore.org">email@montefiore.org</a></li>
+                           <li>Courses completed: 2</li>
+                           <li> Courses in progress: 2</li>
+                           <li> Last login: 6/27/2017</li>
+                     </ul>
+                  </div>
+                  </div>
+                  <div class="col-12 col-md-3">
+                     <button type="button" class="btn-rounded btn-rounded-flat">Edit</button>
+                     <button type="button" class="btn-rounded btn-rounded-flat" data-toggle="modal" data-target="#reset-password-modal">Reset Password</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="inner-wrapper">
+      	<div class="container-fluid">
+            
+            <h3 class="section-title">Performance</h3>
+            <div class="question-box  score-box-content">
+               <div class="container-fluid">
+                  
+                  <div class="row question-content">
+                     <div class="col-12 col-md-6 score-box">
+                        <div class="score-progress-bar">
+                           <div class="pie_progress" data-barcolor="#46CE6A" data-barsize="10" role="progressbar" data-goal="100" aria-valuemin="0" aria-valuemax="100">
+                              <span class="pie_progress__number">0%</span>
+                           </div>
+                        </div>
+                        <div class="score-text">
+                           <h6>Student Average</h6>
+                           <p>This score is based on the student Post Test peformance only.</p>
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-6 score-box">
+                        <div class="score-progress-bar">
+                           <div class="pie_progress" data-barcolor="#46CE6A" data-barsize="10" role="progressbar" data-goal="100" aria-valuemin="0" aria-valuemax="100">
+                              <span class="pie_progress__number">0%</span>
+                           </div>
+                        </div>
+                        <div class="score-text">
+                           <h6>Average Score</h6>
+                           <p>Average score for all students   at the same PGY level.</p>
+                        </div>
+                     </div>
+                  </div> 
+               </div>
+            </div>
+
+            <h3 class="section-title">Assignments <a href="" data-toggle="modal" data-target="#send-reminders-modal">Send Reminders</a></h3>
+            <div class="row order-row">
+               <div class="col-12 col-sm-12 col-md-6 hide-in-mobile">
+               	<label>Lecture</label>
+                  <div class="btns-arrow-up-down">
+                     <button><i class="material-icons">keyboard_arrow_up</i></button>
+                     <button><i class="material-icons">keyboard_arrow_down</i></button>
+                  </div>
+               </div>
+               <div class="col-4 col-sm-4 col-md-2">
+               	<label>Status</label>
+                  <div class="btns-arrow-up-down">
+                     <button><i class="material-icons">keyboard_arrow_up</i></button>
+                     <button><i class="material-icons">keyboard_arrow_down</i></button>
+                  </div>
+               </div>
+               <div class="col-4 col-sm-4 col-md-2">
+                  <label>Invitation Date</label>
+                  <div class="btns-arrow-up-down">
+                     <button><i class="material-icons">keyboard_arrow_up</i></button>
+                     <button><i class="material-icons">keyboard_arrow_down</i></button>
+                  </div>
+               </div>
+               <div class="col-4 col-sm-4 col-md-2">
+                  <label>Last Activity</label>
+                  <div class="btns-arrow-up-down">
+                     <button><i class="material-icons">keyboard_arrow_up</i></button>
+                     <button><i class="material-icons">keyboard_arrow_down</i></button>
+                  </div>
+               </div>
+            </div>
+            <div class="table-tr">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-12 col-sm-12 col-md-6 td-blue td-ellipsis">
+                        <a href="#">Performing cataract surgery in a patient with active uveitis cataract surgery in a patient with active uveitis</a>
+                     </div>
+                     <div class="col-4 col-sm-4 col-md-2">
+                        <label class="td-red">Not Started</label>
+                     </div>
+                      <div class="col-4 col-sm-4 col-md-2">
+                        <label class="td-date">02-13-2018</label>
+                     </div>
+                      <div class="col-4 col-sm-4 col-md-2">
+                        <label class="td-date"> 02-15-2018</label>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="table-tr ">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-12 col-sm-12 col-md-6 td-blue td-ellipsis">
+                        Performing cataract surgery in a patient with active uveitis
+                     </div>
+                     <div class="col-4 col-sm-4 col-md-2">
+                        <label class="td-orange">In Progress</label>
+                     </div>
+                      <div class="col-4 col-sm-4 col-md-2">
+                        <label class="td-date">02-13-2018</label>
+                     </div>
+                      <div class="col-4 col-sm-4 col-md-2">
+                        <label class="td-date"> 02-15-2018</label>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="table-tr ">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-12 col-sm-12 col-md-6 td-blue td-ellipsis">
+                        <a href="#">Performing cataract surgery in a patient with active uveitis</a>
+                     </div>
+                     <div class="col-4 col-sm-4 col-md-2">
+                        <label class="td-green">Complete</label>
+                     </div>
+                      <div class="col-4 col-sm-4 col-md-2">
+                        <label class="td-date">02-13-2018</label>
+                     </div>
+                      <div class="col-4 col-sm-4 col-md-2">
+                        <label class="td-date"> 02-15-2018</label>
+                     </div>
+                  </div>
+               </div>
+            </div>
+        
+
+
+         <h3 class="section-title">Viewed Lectures</h3>
+            <div class="row order-row">
+               <div class="col-12 col-sm-12 col-md-6 hide-in-mobile">
+                  <label>Lecture</label>
+                  <div class="btns-arrow-up-down">
+                     <button><i class="material-icons">keyboard_arrow_up</i></button>
+                     <button><i class="material-icons">keyboard_arrow_down</i></button>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-6 col-md-2">
+                  <label>Status</label>
+                  <div class="btns-arrow-up-down">
+                     <button><i class="material-icons">keyboard_arrow_up</i></button>
+                     <button><i class="material-icons">keyboard_arrow_down</i></button>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-6 col-md-4 is--center">
+                  <label>Last Activity</label>
+                  <div class="btns-arrow-up-down">
+                     <button><i class="material-icons">keyboard_arrow_up</i></button>
+                     <button><i class="material-icons">keyboard_arrow_down</i></button>
+                  </div>
+               </div>
+            </div>
+            <div class="table-tr">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-12 col-sm-12 col-md-6 td-blue td-ellipsis">
+                        <a href="#">Performing cataract surgery in a patient with active uveitis cataract surgery in a patient with active uveitis</a>
+                     </div>
+                     <div class="col-6 col-sm-6 col-md-2">
+                        <label class="td-red">Not Started</label>
+                     </div>
+                      <div class="col-6 col-sm-6 col-md-4 is--center">
+                        <label class="td-date">02-13-2018</label>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="table-tr ">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-12 col-sm-12 col-md-6 td-blue td-ellipsis">
+                        Performing cataract surgery in a patient with active uveitis
+                     </div>
+                     <div class="col-6 col-sm-6 col-md-2">
+                        <label class="td-orange">In Progress</label>
+                     </div>
+                      <div class="col-6 col-sm-6 col-md-4 is--center">
+                        <label class="td-date">02-13-2018</label>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="table-tr ">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-12 col-sm-12 col-md-6 td-blue td-ellipsis">
+                        <a href="#">Performing cataract surgery in a patient with active uveitis</a>
+                     </div>
+                     <div class="col-6 col-sm-6 col-md-2">
+                        <label class="td-green">Complete</label>
+                     </div>
+                      <div class="col-6 col-sm-6 col-md-4 is--center">
+                        <label class="td-date">02-13-2018</label>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+      </div>
+   </div> 
+      
+   <div class="course-footer">
+      <button type="button" class="btn-rounded btn-back">Back</button>
+   </div>
+</div>       
+         
+
+<!-- RESET PASSWORD MODAL-->
+<div id="reset-password-modal" class="modal fade" tabindex="-1">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title">Reset Password</h5>
+         </div>
+         <form>
+            <div class="modal-body">
+             
+                  <div class="inner-wrapper">
+
+                     <div class="row">
+                        <div class="col-12 col-sm-12 col-md-3">
+                           <label class="form-label">Password</label>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-7">
+                           <input type="password" class="rounded-input">
+                            <p class="form-error-msj form-error-msj-bottom is--hide">Error aqui</p>
+                        </div>
+                     </div>
+
+                     <div class="row row--has-error">
+                        <div class="col-12 col-sm-12 col-md-3">
+                           <label class="form-label  has-error">Repeat password</label>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-7">
+                           <input type="password" class="rounded-input  has-error">
+                           <p class="form-error-msj form-error-msj-bottom">Error aqui.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn-rounded">Confirm</button>
+                  <button type="button" class="btn-rounded" data-dismiss="modal">Cancel</button>
+               </div>
+           
+         </form>
+      </div>
+      <!-- mensaje de ok/error -->
+      <div class="modal-content" style="display: none">
+         <div class="modal-body">
+            <p class="modal-text modal-text-success">Success!</p>
+            <p class="modal-text modal-text-error">Ups!</p>
+            <p class="modal-text-secondary">Lorem ipsum dolor sit amet consectetur adipiscing elit augue.</p>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn-rounded" data-dismiss="modal">Close</button>
+         </div>
+      </div>
+  </div>
+</div>   
+
+
+
+
+
+     
+<!-- SEND REMINDERS MODAL-->
+<div id="send-reminders-modal" class="modal fade" tabindex="-1">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+         <div class="modal-body">
+           <p class="modal-text">Lorem ipsum dolor sit amet consectetur adipiscing?  </p>
+           <p class="modal-text-secondary">Leo neque vehicula duis tellus tincidunt suscipit potenti fringill.</p>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn-rounded">Yes</button>
+            <button type="button" class="btn-rounded" data-dismiss="modal">No</button>
+         </div>
+      </div>
+      <!-- mensaje de ok/error -->
+      <div class="modal-content" style="display: none">
+         <div class="modal-body">
+            <p class="modal-text modal-text-success">Success!</p>
+            <p class="modal-text modal-text-error">Ups!</p>
+            <p class="modal-text-secondary">Lorem ipsum dolor sit amet consectetur adipiscing elit augue.</p>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn-rounded" data-dismiss="modal">Close</button>
+         </div>
+      </div>
+  </div>
+</div>   
+
+
+
+
+<!-- Optional JavaScript --> 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+<!-- https://www.jqueryscript.net/loading/Animated-Circle-Progress-Bar-with-jQuery-SVG-asPieProgress.html -->
+<script src="../js/jquery-asPieProgress.min.js"></script>
+<script>
+
+   $(".nav-searchBox--input").focus(function() {
+      $(".nav-searchBox--iconClose").removeClass("is--hide");
+      $(".nav-searchBox--iconSearch").addClass("is--hide");
+   }).blur(function() {
+      $(".nav-searchBox--iconClose").addClass("is--hide");
+      $(".nav-searchBox--iconSearch").removeClass("is--hide");
+      $(this).val("");
+   });
+
+
+</script>
+
+<script type="text/javascript">
+    jQuery(function($) {
+      $('.pie_progress').asPieProgress({
+        namespace: 'pie_progress'
+      });
+
+      $('.pie_progress').asPieProgress('go', '75%');
+    });
+  </script>
+
+</body>
+</html>
