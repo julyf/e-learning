@@ -503,7 +503,6 @@ input.switch:checked + label {
       display: block;
       clear: both;
       overflow: auto; } }
-
   .top-bar .btn-group > .btn {
     color: #2F80ED;
     margin: 0 5px;
@@ -2101,7 +2100,6 @@ input.switch:checked + label {
   max-width: 90%;
   margin: 0 auto; }
 
-
 .btn-content-center {
   position: absolute;
   width: 100%;
@@ -2252,7 +2250,6 @@ input.switch:checked + label {
   .td-name {
     margin-bottom: 15px; } }
 
->>>>>>> develop
 .director--student-detail-content {
   max-width: 970px;
   margin: 0 auto; }
@@ -2273,10 +2270,8 @@ input.switch:checked + label {
   color: #828282;
   font-size: 1rem; }
 
-
 .td-gray {
   color: #828282; }
-
 
 .td-red {
   color: #EB5757; }
@@ -2354,7 +2349,6 @@ input.switch:checked + label {
         margin: 20px 5px 0 5px;
         width: auto; } }
 
-
 .grey-box-top {
   padding: 50px 0 10px 0; }
 
@@ -2379,4 +2373,56 @@ input.switch:checked + label {
   @media (max-width: 575px) {
     .check-list-assing .assign-individual {
       text-align: left !important; } }
->>>>>>> develop
+
+.login-content {
+  padding: 100px 0;
+  max-width: 90%;
+  margin: 0 auto; }
+  .login-content .btn-rounded {
+    min-width: 110px; }
+  .login-content .remember-me {
+    line-height: 42px;
+    text-align: left;
+    margin: 0;
+    display: inline-block; }
+    .login-content .remember-me input {
+      margin-right: 10px; }
+  .login-content .login-btn-content {
+    margin: 10px 0 20px 0; }
+
+.error-msj-text {
+  color: #FF0000;
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: center; }
+
+.success-msj-text {
+  color: #72D67C;
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: center; }
+
+.login-error-msj {
+  margin-bottom: 30px; }
+
+.error-msj-text-secondary {
+  color: #4F4F4F;
+  font-size: 1rem;
+  text-align: center; }
+
+.is-align-right {
+  text-align: right; }
+
+.is-align-left {
+  text-align: left; }
+
+.login-section-title {
+  color: #333333;
+  font-size: 1.875rem;
+  text-align: center; }
+
+.login-section-sub-title {
+  margin: 10px 0;
+  text-align: center;
+  color: #828282;
+  margin-bottom: 30px; }

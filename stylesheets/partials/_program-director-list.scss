@@ -198,10 +198,10 @@ color: #27AE60;
 }
 
 .completed-lectures-number {
-		display: block;
-		font-size: 1.5rem;
-		text-align: center;
-	}
+	display: block;
+	font-size: 1.5rem;
+	text-align: center;
+}
 
 .reportBox-state {
 	height: 12px;
@@ -215,8 +215,8 @@ color: #27AE60;
 		height: 100%;
 		left: 0;
 		top: 0;
-
 	}
+
 	.reportBox-progressBar--red {
 		background-color: #ED4824
 	}
@@ -224,13 +224,11 @@ color: #27AE60;
 	.reportBox-progressBar--green {
 		background-color: #72D67C
 	}
-
-
 }
 
 .td-name {
 	@media (max-width: 767px) {
 		margin-bottom: 15px;
 	}
-	}
->>>>>>> develop
+}
+
