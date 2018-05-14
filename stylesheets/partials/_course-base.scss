@@ -25,6 +25,13 @@
       }
    }
 
+   .btn-rounded-primary {
+      min-width: 213px;
+      @media all and (max-width: 767px) {
+         min-width:0;
+      }
+   }
+
    .btn-back {
       float: left;
       margin-right: 0px;

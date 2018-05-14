@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+<head>
+   <title>Program Director Dashboard Student</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/asPieProgress.min.css">
+   <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+   <div class="wrapper listado director-dashborad-student">
+      <div class="header">
+         <nav class="navbar">
+            <div class="inner-wrapper">
+               <div class="row">
+                  <div class="col-6 col-sm-6 col-md-3 navbar--logoBox">
+                     <a href="#">
+                        <span class="logo-content"><img src="../img/logo.svg" alt=""></span>
+                        <p>Program Director <span>Dashboard</span></p>
+                     </a>
+                  </div>
+                  <div class="col-6 col-sm-6 col-md-3 col-sm-push-6 navbar--userBox">
+                     <p class="navbar--userBox-name">Nombre Apellido Nombre Apellido</p>
+                     <img class="navbar--userBox-img" src="http://via.placeholder.com/45x45" alt="">
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-sm-pull-3 navbar--searchBox">
+                     <form>
+                        <div class="navbar--searchBox-content">
+                           <input type="text" class="nav-searchBox--input">
+                           <button type="submit" class="nav-searchBox--iconSearch"><i class="material-icons">search</i></button>
+                           <button type="reset" class="nav-searchBox--iconClose is--hide"><i class="material-icons">close</i></button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div> 
+         </nav>
+      </div>
+
+      <div class="top-bar filters-nav">
+         <div class="inner-wrapper">
+            
+            <div class="show-filters-mobile">
+               <a class="show-filters-mobile-btn"><i class="material-icons">filter_list</i> Filter</a>
+            </div>
+
+            <div class="filter--courseType">
+               <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-transparent ">                 
+                     <input type="radio" name="options" id="option1" > MY CURRICULUM 
+                  </label>
+                  <label class="btn btn-transparent active" >
+                     <input type="radio" name="options" id="option2" checked> PROGRESS REPORT
+                  </label>
+                  <label class="btn btn-transparent">
+                     <input type="radio" name="options" id="option3" > MY DEPARTMENT
+                  </label>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="content">
+         <div class="inner-wrapper">
+            <div class="container-fluid">
+               <div class="row result-content">
+                  <div class="col-12 col-md-4 col-lg-3 result-content-filters ">
+
+                     <div class="filter-section">
+                        <h3 class="is-hide-desktop"><a class="hide-filters-mobile-btn"><i class="material-icons">arrow_back</i></a></h3>
+                        <div class="filterBox">
+                           <div class="filterBox--firstLevel">
+                              <a class="btn btn-transparent" href="#" >Overall Peformance</a>
+                           </div>
+                           <div class="filterBox--firstLevel filterBox--level-selected">
+                              <a class="btn btn-transparent" href="#" >PGY 2 </a>
+                           </div>
+                           <div class="filterBox--firstLevel">
+                              <a class="btn btn-transparent" href="#" >PGY 3 </a>
+                           </div>
+                           <div class="filterBox--firstLevel">
+                              <a class="btn btn-transparent" href="#" >PGY 4</a>
+                           </div>
+                        </div><!--filterBox-->
+                     </div>
+                  </div>
+
+                  <div class="col-12 col-md-8 col-lg-9">
+                     <div class="program-director-list">
+                        
+                        <div class="reportBox">
+                           <div class="row">
+                              <div class="col-12 col-sm-5 col-md-5 col-lg-4 reportBox-name">
+                                 <a href="#">PGY 2 
+                                 Averages</a>
+                              </div>
+                              <div class="col-3 col-sm-2 col-md-2 col-lg-2">
+                                 <label class="reportBox-title">Completed Lectures</label>
+                                 <span class="completed-lectures-number">15</span>
+                              </div>
+                              <div class="col-3 col-sm-2 col-md-2 col-lg-2">
+                                 <label class="reportBox-title">Completion Rate</label>
+                                 <div class="score-progress-bar">
+                                    <div class="pie_progress" data-barcolor="#46CE6A" data-barsize="10" role="progressbar" data-goal="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                 </div>
+                              </div>
+                              <div class="col-6 col-sm-3 col-md-3 col-lg-4 ">
+                                 <label class="reportBox-title">Pre Test Avg. vs Post Test Avg</label>
+                                 <div class="reportBox-state"><div class="reportBox-progressBar reportBox-progressBar--red" style="width:40%"></div></div>
+                                 <div class="reportBox-state"><div class="reportBox-progressBar reportBox-progressBar--green" style="width:80%"></div></div>
+                              </div>
+                           </div>
+                        </div>
+
+                        
+                        <div class="reportBox">
+                           <div class="row">
+                              <div class="col-12 col-sm-4 col-md-5 col-lg-4 reportBox-name">
+                                 <img src="http://via.placeholder.com/115x75" alt="">
+                                 <span class="reportBox-info">
+                                    <span class="pgy">PGY 2 </span>
+                                    <a href="#">Dr. John Liu</a>
+                                    <span class="last-login">Last login: <span>2018-03-14</span></span>
+                                 </span>
+                              </div>
+                              <div class="col-3 col-sm-2 col-md-2 col-lg-2">
+                                 <label class="reportBox-title">Completed Lectures</label>
+                                 <span class="completed-lectures-number">07</span>
+                              </div>
+                              <div class="col-3 col-sm-2 col-md-2 col-lg-2">
+                                 <label class="reportBox-title">Completion Rate</label>
+                                 <div class="score-progress-bar">
+                                    <div class="pie_progress" data-barcolor="#46CE6A" data-barsize="10" role="progressbar" data-goal="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                 </div>
+                              </div>
+                              <div class="col-6 col-sm-4 col-md-3 col-lg-4 ">
+                                 <label class="reportBox-title">Pre Test Avg. vs Post Test Avg</label>
+                                 <div class="reportBox-state"><div class="reportBox-progressBar reportBox-progressBar--red" style="width:40%"></div></div>
+                                 <div class="reportBox-state"><div class="reportBox-progressBar reportBox-progressBar--green" style="width:80%"></div></div>
+                              </div>
+                           </div>
+                        </div>
+
+
+
+                      
+
+
+                           
+                           
+                           
+
+                        <div class="is--loading">
+                           <div class="spinner"></div>
+                        <div>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+</div>
+
+
+
+
+<!-- para mostrar el loading en toda la pag se agrega la clase show -->
+<div class="loading-backdrop">
+   <div class="spinner"></div>
+</div>
+
+<!-- Optional JavaScript --> 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<script src="../js/jquery-asPieProgress.min.js"></script>
+<script>
+
+   $(".nav-searchBox--input").focus(function() {
+      $(".nav-searchBox--iconClose").removeClass("is--hide");
+      $(".nav-searchBox--iconSearch").addClass("is--hide");
+   }).blur(function() {
+      $(".nav-searchBox--iconClose").addClass("is--hide");
+      $(".nav-searchBox--iconSearch").removeClass("is--hide");
+      $(this).val("");
+   });
+
+   $(".show-filters-mobile-btn").click(function(){
+      $(".filter-section").addClass("filter-section--in");
+      $("body").css("overflow", "hidden");
+   });
+
+   $(".hide-filters-mobile-btn").click(function(){
+      $(".filter-section").removeClass("filter-section--in");
+      $("body").css("overflow", "auto");
+   });
+</script>
+<script type="text/javascript">
+    jQuery(function($) {
+      $('.pie_progress').asPieProgress({
+        namespace: 'pie_progress'
+      });
+
+      $('.pie_progress').asPieProgress('go', '75%');
+    });
+  </script>
+
+
+</body>
+</html>

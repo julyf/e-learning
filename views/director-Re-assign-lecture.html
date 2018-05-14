@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-   <title>New student</title>
+   <title>New teacher</title>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -39,7 +39,134 @@
       </div>
 
    <form action="" method="">
-      <div class="content new-student-form-content">
+      <div class="content assign-lecture-content">
+         <div class="inner-wrapper">
+
+            <div class="row lecturer-response-content">
+               <div class="col-12 col-sm-12 col-md-3">
+                  <label class="form-label">Lecturer Response</label>
+               </div>
+               <div class="col-12 col-sm-12 col-md-6">
+                  <textarea class="rounded-textarea">Sorry, I don't have any good slides on this topic, but Dr. John Smith has done this lecture before. Can you reassign to him?
+                  </textarea>
+               </div>
+               <div class="col-12 col-sm-12 col-md-3">
+                  <p class="form-error-msj is--hide">Error aqui</p>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-12 col-sm-12 col-md-3">
+                  <label class="form-label">Lecture Title</label>
+               </div>
+               <div class="col-12 col-sm-12 col-md-6">
+                  <input type="text" class="rounded-input" placeholder="Please suggest a lecture title">
+               </div>
+               <div class="col-12 col-sm-12 col-md-3">
+                  <p class="form-error-msj is--hide">Error aqui</p>
+               </div>
+            </div>
+
+            <div class="row row--has-error">
+               <div class="col-12 col-sm-12 col-md-3">
+                  <label class="form-label">Lecturer</label>
+               </div>
+               <div class="col-12 col-sm-12 col-md-6">
+                  <div class="select-content">
+                     <select class="rounded-select" id="add-teacher-select">
+                        <option>Dr. John Smith</option>
+                        <option>John Anderson</option>
+                        <option>John Smith</option>
+                        <option disabled>-----------------------------------------------</option>
+                        <option value="add-teacher">Add New Teacher</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="col-12 col-sm-12 col-md-3">
+                  <p class="form-error-msj is--hide">Error aqui</p>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-12 col-sm-12 col-md-3">
+                  <label class="form-label has-error">Objectives</label>
+               </div>
+               <div class="col-12 col-sm-12 col-md-6">
+                  <textarea class="rounded-textarea has-error" placeholder="Please suggest some lecture objectives"></textarea>
+               </div>
+               <div class="col-12 col-sm-12 col-md-3">
+                  <p class="form-error-msj">Error aqui</p>
+               </div>
+            </div>
+
+            <div class="row row--has-error">
+               <div class="col-12 col-sm-12 col-md-3">
+                  <label class="form-label has-error">Topic</label>
+               </div>
+               <div class="col-12 col-sm-6 col-md-3">
+                  <div class="select-content has-error">
+                     <select class="rounded-select">
+                        <option>Please select the lecture section</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="col-12 col-sm-6 col-md-3">
+                  <div class="select-content has-error">
+                     <select class="rounded-select">
+                        <option>Please select the lecture sub section</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="col-12 col-sm-12 col-md-3">
+                  <p class="form-error-msj">Please select the section and sub-section from the menus</p>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-12 col-sm-12 col-md-3">
+                  <label class="form-label">Access</label>
+               </div>
+               <div class="col-12 col-sm-12 col-md-6">
+                  <div class="select-content">
+                     <select class="rounded-select">
+                        <option>All Institutions</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="col-12 col-sm-12 col-md-3">
+                  <p class="form-error-msj is--hide">Error aqui</p>
+               </div>
+            </div>
+
+
+
+
+
+
+            
+
+         </div>
+      </div>
+      <div class="course-footer">
+         <button type="button" class="btn-rounded btn-back">CANCEL</button>
+         <button type="button" class="btn-rounded">DELETE INVITATION</button>
+         <button type="button" class="btn-rounded btn-rounded-primary btn-next">RE-ASSIGN</button>
+      </div>
+   </form>
+</div>       
+         
+
+
+   <!-- ADD TEACHER MODAL-->
+<div id="add-teacher-modal" class="modal fade add-teacher-modal" tabindex="-1">
+   <div class="modal-dialog modal-dialog-centered">
+     
+      <div class="modal-content">
+          <div class="modal-header">
+         <h5 class="modal-title">Add teacher</h5>
+      </div>
+         <form action="" method="">
+      <div class="content ">
          <div class="inner-wrapper">
 
             <div class="row">
@@ -80,15 +207,12 @@
 
             <div class="row row--has-error">
                <div class="col-12 col-sm-12 col-md-3">
-                  <label class="form-label has-error">Rank</label>
+                  <label class="form-label has-error">Specialty</label>
                </div>
                <div class="col-12 col-sm-12 col-md-6">
                   <div class="select-content has-error">
                      <select class="rounded-select">
-                        <option>PGY 2</option>
-                        <option>PGY 3</option>
-                        <option>PGY 4</option>
-                        <option>Alumnus</option>
+                        <option>None</option>
                      </select>
                   </div>
                </div>
@@ -112,7 +236,7 @@
                </div>
             </div>
 
-            <div class="row">
+            <div class="row new-lecture">
                <div class="col-12 col-sm-12 col-md-3">
                   <label class="form-label title-image-label">Image</label>
                </div>
@@ -130,31 +254,17 @@
 
          </div>
       </div>
-      <div class="course-footer">
+      <div class="modal-footer">
          <button type="button" class="btn-rounded btn-back">CANCEL</button>
-         <button type="button" class="btn-rounded btn-secondary-right" data-toggle="modal" data-target="#desable-user-modal">DISABLE</button>
          <button type="button" class="btn-rounded btn-rounded-primary btn-next">SAVE</button>
       </div>
    </form>
-</div>       
+         </div>
          
-
-<!-- DISABLE USER MODAL-->
-<div id="desable-user-modal" class="modal fade" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-body">
-         <p class="modal-text">Are you sure you want disable?</p>
-         <p class="modal-text-secondary">Once disable, the user will not be able to join.</p>
-      </div><div class="modal-footer">
-         <button type="button" class="btn-rounded">Yes</button>
-         <button type="button" class="btn-rounded" data-dismiss="modal">No</button>
       </div>
-    </div>
+      
   </div>
-</div>
-  
-   
+</div>   
 
 
 
@@ -164,7 +274,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-
+<script type="text/javascript">
+   
+   $("#add-teacher-select").on("change", function () {        
+    $modal = $('#add-teacher-modal');
+    if($(this).val() === 'add-teacher'){
+        $modal.modal('show');
+    }
+});
+</script>
 
 
 
