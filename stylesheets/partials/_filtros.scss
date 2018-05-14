@@ -78,6 +78,10 @@
          border-top: 0;
       }
 
+      .filterBox--level-selected {
+         background-color: #E0E0E0;;
+      }
+
       .filterBox--firstLevel {
          > .btn {
          font-size: 1.25rem;
@@ -89,6 +93,8 @@
             padding-left: 30px;
          }
       }
+
+
 
       .filterBox--secondLevel{ 
          > .btn{

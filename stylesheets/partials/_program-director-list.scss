@@ -29,3 +29,208 @@
 	max-width: 90%;
 	margin:  0 auto;
 }
+
+.btn-content-center {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+
+	.btn-rounded {
+		max-width: 200px;
+		width: 90%;
+	}
+
+	span {
+		color: #2F80ED;
+	}
+
+}
+
+[class*="courseBox--status-"]{
+color: #27AE60;
+    font-size: 0.875rem;
+    position: absolute;
+    right: 15px;
+    top: 10px;}
+
+.courseBox--status-red {
+	color: #EB5757
+}
+
+.courseBox--status-green {
+	color: #27AE60;
+}
+
+.courseBox--status-orange {
+	color: #F2994A;
+}
+
+
+.courseBox--title-content {
+	margin-top: 10px;
+}
+
+.courseBox--title {
+	color: #2F80ED;
+	font-size: 1.25em;
+	line-height: 26px;
+	margin-top: 10px;
+}
+
+.courseBox--subtitle {
+	font-size: 1rem;
+	display: block;
+}
+
+.courseBox--text {
+	color: #828282;
+	font-size: 0.875em;
+	margin-top: 10px;
+}
+
+
+.is-align-right {
+	text-align: right !important;
+}
+.is--block {
+	display: block !important;
+}
+
+.btn-assign-lecture {
+	display: block;
+	padding: 0 5px;
+	font-size: 0.9375em;
+	margin:0 auto 40px;
+}
+
+.add-teacher-modal {
+	.content  {
+		padding: 30px 0;
+	}
+}
+
+
+.lecturer-response-content {
+	padding-bottom: 4vw;
+}
+
+.assign-lecture-content {
+	padding: 60px 0 0 0;
+}
+
+//progress report
+.reportBox{
+	background-color: #F2F2F2;
+	margin-bottom: 25px;
+	border-radius: 10px;
+	padding: 10px 20px;
+
+	.reportBox-name {
+		vertical-align: top;
+		@media (max-width: 767px) { 
+			margin-bottom: 15px;
+		}
+
+		img {
+			display: inline-block;
+			vertical-align: top;
+			border-radius: 15px;
+			width: 42%;
+			max-width: 115px;
+		}
+	}
+
+	.reportBox-info {
+		display: inline-block;
+		vertical-align: middle;
+		max-width: calc(100% - 50%);
+		margin-left: 10px;
+		width: 68%;
+
+		@media (max-width: 1024px) {
+			max-width: calc(100% - 52%);
+		}
+
+		.pgy {
+			display: block;
+			color: #27AE60;
+			font-size:  0.75rem;
+			margin-bottom: 10px;
+		}
+
+		a {
+			display: block;
+			color: #2F80ED;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			font-size:  1.25rem;
+			list-style:  1.625rem;
+		}
+		.last-login {
+			color: #828282;
+			font-size: 0.6875rem;
+			display: block;
+			span {
+				white-space: nowrap;
+			}
+		}
+	}
+
+	.score-progress-bar {
+		width: 45px;
+		height: 45px;
+		margin:  0 auto;
+	}
+	.reportBox-title {
+		display: block;
+		color: #2F80ED;
+		font-size: 0.875rem;
+		text-align: center;
+		margin-bottom: 10px;
+		white-space: nowrap;
+
+		@media (max-width: 1170px) {
+			white-space: normal;
+		}
+	}
+}
+
+.completed-lectures-number {
+		display: block;
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+.reportBox-state {
+	height: 12px;
+	width: 100%;
+	position: relative;
+	background-color: white;
+	border: 1px solid rgba(94, 94, 94, 0.1);
+	margin-bottom: 10px;
+
+	.reportBox-progressBar {
+		height: 100%;
+		left: 0;
+		top: 0;
+
+	}
+	.reportBox-progressBar--red {
+		background-color: #ED4824
+	}
+
+	.reportBox-progressBar--green {
+		background-color: #72D67C
+	}
+
+
+}
+
+.td-name {
+	@media (max-width: 767px) {
+		margin-bottom: 15px;
+	}
+	}
+>>>>>>> develop
