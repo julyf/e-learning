@@ -11,6 +11,10 @@
          position: relative;
          max-width: 900px;
          width: 96%;
+         min-height: calc(100vh - 216px);
+         @media (max-width: 767px) {
+         min-height: 50vh;
+         }
 
          .loading-content{
             display: none,
@@ -72,6 +76,8 @@
          .course-slide-img {
             max-width: 900px;
             width: 100%;
+
+           
          }
       }
 
